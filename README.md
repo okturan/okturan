@@ -6,7 +6,7 @@ Junior Backend Developer
 
 * 🌍 I'm based in Istanbul, Turkey
 * ✉️ You can contact me at [okanert@gmail.com](mailto:okanert@gmail.com)
-* 🧠 I'm learning Spring Framework
+* 🧠 I'm currently learning React.
 
 ### Skills
 
