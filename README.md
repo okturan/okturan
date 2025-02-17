@@ -6,7 +6,7 @@ Junior Backend Developer
 
 * 🌍 I'm based in Istanbul, Turkey
 * ✉️ You can contact me at [okanert@gmail.com](mailto:okanert@gmail.com)
-* 🧠 I'm currently learning React Native.
+* 🧠 I'm currently grinding leetcode <a href="https://www.leetcode.com/okanerturan" target="_blank" rel="noreferrer"> <picture> <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="okanerturan" height="30" width="30" /></picture></a>
 
 ### Skills
 
