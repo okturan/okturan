@@ -136,7 +136,7 @@ function placeholderCover(x, y, w, h, color, title) {
 function animeCard(anime, index) {
   const cardWidth = 258;
   const x = 34 + index * 276;
-  const y = 78;
+  const y = 32;
   const coverX = x + 16;
   const coverY = y + 18;
   const coverW = 82;
@@ -145,8 +145,7 @@ function animeCard(anime, index) {
   const titleSvg = titleLines.map((line, i) =>
     `<tspan x="${x + 112}" dy="${i === 0 ? 0 : 22}">${xml(line)}</tspan>`
   ).join("");
-  const meta = `${anime.year} / ${anime.episodes} eps / ${anime.score}%`;
-  const genres = anime.genres.join(" / ");
+  const meta = `${anime.year} / ${anime.episodes} episodes`;
   const cover = anime.cover
     ? `<image href="${anime.cover}" x="${coverX}" y="${coverY}" width="${coverW}" height="${coverH}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cover-${index})"/>`
     : placeholderCover(coverX, coverY, coverW, coverH, anime.color, anime.title);
@@ -157,21 +156,19 @@ function animeCard(anime, index) {
       ${cover}
       <text x="${x + 112}" y="${y + 44}" font-size="19" font-weight="700" fill="${palette.text}">${titleSvg}</text>
       <text x="${x + 112}" y="${y + 93}" font-size="12" fill="${palette.muted}">${xml(meta)}</text>
-      <text x="${x + 112}" y="${y + 118}" font-size="12" fill="${palette.green}">${xml(genres)}</text>
     </a>
   `;
 }
 
 function renderAnimeSvg(anime) {
+  const labels = anime.map(({ title }) => title).join(", ");
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="270" role="img" aria-label="Favorite anime">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="220" role="img" aria-label="Favorite anime: ${xml(labels)}">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     a { cursor: pointer; }
   </style>
-  <rect width="860" height="270" rx="18" fill="${palette.bg}"/>
-  <text x="34" y="42" font-size="26" font-weight="800" fill="${palette.text}">Favorite anime</text>
-  <text x="34" y="64" font-size="13" fill="${palette.muted}">Manual picks, rendered with AniList metadata</text>
+  <rect width="860" height="220" rx="18" fill="${palette.bg}"/>
   ${anime.map(animeCard).join("\n")}
 </svg>
 `;
