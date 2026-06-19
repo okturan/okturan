@@ -51,25 +51,6 @@ Backend developer building practical software, automation, and AI-assisted engin
 - Claude Code for repo-aware edits, explanation, git workflows, and agentic coding sessions.
 - Copilot and Cursor for editor-side completions, navigation, and fast iteration.
 
-## Profile README Toolkit
-
-These are the generators and customizers worth checking before hand-rolling another static profile:
-
-| Tool | Best for |
-| --- | --- |
-| [GPRM](https://gprm.itsvg.in/) | Fast GitHub profile README generation with social links, stats, and sections. |
-| [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator/) | Classic form-based profile generator with broad social and skill coverage. |
-| [Profilinator](https://profilinator.rishav.dev/) | Drag-and-drop profile README blocks and quick layout experiments. |
-| [readme.so](https://readme.so/) | Clean project README section builder. |
-| [Shields.io](https://shields.io/) | Custom badges for tools, links, versions, platforms, and workflow status. |
-| [Simple Icons](https://simpleicons.org/) | Brand icons that work well with Shields and custom SVG badges. |
-| [Skill Icons](https://skillicons.dev/) | Compact technology icon rows without maintaining individual SVG links. |
-| [Readme Typing SVG](https://readme-typing-svg.demolab.com/) | Animated headline text for profile READMEs. |
-| [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) | GitHub stats and language cards. |
-| [Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Contribution streak cards. |
-| [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy) | Trophy-style profile achievement cards. |
-| [Metrics](https://github.com/lowlighter/metrics) | Deep, highly customizable profile analytics. |
-
 ## GitHub Snapshot
 
 <p>
