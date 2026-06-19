@@ -10,7 +10,7 @@ Backend developer building practical software, automation, and AI-assisted engin
   <a href="https://leetcode.com/okanerturan/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-okanerturan-FFA116?style=flat-square&logo=leetcode&logoColor=black"></a>
 </p>
 
-<img alt="Typing intro" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=800&color=36BCF7&width=860&lines=Backend+developer;AI-assisted+builder;Codex+%2B+Claude+Code+workflow;JavaScript+%2F+Java+%2F+Ruby+%2F+Bash">
+<img alt="Typing intro" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=800&color=36BCF7&width=860&lines=Backend+developer;AI-assisted+builder;token+maxxing;JavaScript+%2F+Java+%2F+Ruby+%2F+Bash">
 
 ## Focus
 
@@ -63,5 +63,9 @@ Backend developer building practical software, automation, and AI-assisted engin
 </p>
 
 <p>
-  <img alt="GitHub activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=okturan&theme=tokyo-night&hide_border=true">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake.svg">
+  </picture>
 </p>
