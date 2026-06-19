@@ -50,6 +50,14 @@ Full-stack developer building practical software, automation, and AI-assisted en
 - Hermes for persistent agent memory and long-running personal automation.
 - Factory Droid and OpenHands for heavier agentic software-development work.
 
+## Favorite Anime
+
+<p>
+  <a href="https://anilist.co/anime/13125/Shinsekai-yori/"><img alt="Shinsekai Yori" src="https://img.shields.io/badge/Shinsekai%20Yori-favorite-0B1622?style=for-the-badge&logo=anilist&logoColor=02A9FF"></a>
+  <a href="https://anilist.co/anime/2246/Mononoke/"><img alt="Mononoke" src="https://img.shields.io/badge/Mononoke-favorite-2F1B3D?style=for-the-badge&logo=anilist&logoColor=E85D75"></a>
+  <a href="https://anilist.co/anime/171018/DAN-DA-DAN/"><img alt="DAN DA DAN" src="https://img.shields.io/badge/DAN%20DA%20DAN-favorite-F15A24?style=for-the-badge&logo=anilist&logoColor=white"></a>
+</p>
+
 ## GitHub Snapshot
 
 <p>
