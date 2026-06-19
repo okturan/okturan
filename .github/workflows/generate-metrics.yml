@@ -30,6 +30,7 @@ jobs:
           plugin_habits_from: 25
           plugin_habits_days: 14
           config_timezone: Europe/Tirane
+          delay: 0
           output_action: commit
           committer_branch: output
           committer_message: Update metrics
