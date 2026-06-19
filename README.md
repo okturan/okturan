@@ -14,10 +14,9 @@ Full-stack developer building practical software, automation, and AI-assisted en
 
 ## Focus
 
-- Shipping full-stack features, automation, scripts, and operational tooling.
-- Using AI coding agents as part of the real development loop: inspect, edit, run, verify, and refine.
-- Keeping projects understandable: clear READMEs, reproducible commands, and concrete handoff notes.
-- Based in Istanbul, Turkey.
+- Shipping fullstack features, automation, scripts, and operational tooling.
+- Using AI coding agents as part of the real development loop. Working with real business data for real business decisions.
+- Based in Tirana, Albania.
 
 ## Stack
 
