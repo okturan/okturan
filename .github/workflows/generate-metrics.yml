@@ -27,8 +27,8 @@ jobs:
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: no
-          plugin_habits_from: 200
-          plugin_habits_days: 30
+          plugin_habits_from: 25
+          plugin_habits_days: 14
           config_timezone: Europe/Tirane
           output_action: commit
           committer_branch: output
