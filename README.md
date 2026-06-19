@@ -68,7 +68,3 @@ Full-stack developer building practical software, automation, and AI-assisted en
     <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake.svg">
   </picture>
 </p>
-
-<p>
-  <img alt="Mildly interesting coding habits" src="https://raw.githubusercontent.com/okturan/okturan/output/metrics.plugin.habits.facts.svg">
-</p>
