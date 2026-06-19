@@ -1,6 +1,6 @@
 # Okan Erturan
 
-Backend developer building practical software, automation, and AI-assisted engineering workflows.
+Full-stack developer building practical software, automation, and AI-assisted engineering workflows.
 
 <p>
   <a href="mailto:okanert@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-okanert%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
@@ -10,11 +10,11 @@ Backend developer building practical software, automation, and AI-assisted engin
   <a href="https://leetcode.com/okanerturan/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-okanerturan-FFA116?style=flat-square&logo=leetcode&logoColor=black"></a>
 </p>
 
-<img alt="Typing intro" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=800&color=36BCF7&width=860&lines=Backend+developer;AI-assisted+builder;token+maxxing;JavaScript+%2F+Java+%2F+Ruby+%2F+Bash">
+<img alt="Typing intro" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=800&color=36BCF7&width=860&lines=Full-stack+developer;AI-assisted+builder;token+maxxing;JavaScript+%2F+Java+%2F+Ruby+%2F+Bash">
 
 ## Focus
 
-- Shipping backend features, automation, scripts, and operational tooling.
+- Shipping full-stack features, automation, scripts, and operational tooling.
 - Using AI coding agents as part of the real development loop: inspect, edit, run, verify, and refine.
 - Keeping projects understandable: clear READMEs, reproducible commands, and concrete handoff notes.
 - Based in Istanbul, Turkey.
