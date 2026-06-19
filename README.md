@@ -50,6 +50,12 @@ Full-stack developer building practical software, automation, and AI-assisted en
 - Hermes for persistent agent memory and long-running personal automation.
 - Factory Droid and OpenHands for heavier agentic software-development work.
 
+## Favorite Anime
+
+<p>
+  <img alt="Favorite anime" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime.svg">
+</p>
+
 ## GitHub Snapshot
 
 <p>
@@ -67,4 +73,8 @@ Full-stack developer building practical software, automation, and AI-assisted en
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake.svg">
     <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/okturan/okturan/output/github-contribution-grid-snake.svg">
   </picture>
+</p>
+
+<p>
+  <img alt="Mildly interesting coding facts" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
 </p>
