@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" role="img" aria-label="Mildly interesting coding facts">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" role="img" aria-label="Recent public coding habits from 500 commits">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   </style>
   <rect width="860" height="190" rx="18" fill="#ffffff"/>
-  <text x="34" y="43" font-size="27" font-weight="800" fill="#24292f">Mildly interesting facts</text>
-  <text x="34" y="84" font-size="20" font-weight="700" fill="#0969da">Recent coding habits</text>
-  <text x="265" y="84" font-size="14" fill="#0969da">(computed from latest 25 commits)</text>
-  <text x="34" y="112" font-size="18" fill="#6e7781">Uses spaces for indentation</text>
-  <text x="34" y="134" font-size="18" fill="#6e7781">Has approximately 43.8 characters per line in tracked files</text>
-  <text x="34" y="156" font-size="18" fill="#6e7781">Mostly pushes code around 10:00</text>
-  <text x="34" y="178" font-size="18" fill="#6e7781">Mostly active on Friday</text>
+  <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
+  <text x="34" y="68" font-size="14" fill="#0969da">Latest 500 public non-merge commits • Oct 16, 2025 – Jul 10, 2026 • Europe/Tirane</text>
+  <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Friday (213 of 500)</text>
+  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 00:00–02:59 (99 of 500)</text>
+  <text x="34" y="144" font-size="18" fill="#6e7781">16 repositories across 42 active dates</text>
+  <text x="34" y="167" font-size="18" fill="#6e7781">Most active repository: foljapp (152 commits)</text>
 </svg>
