@@ -267,9 +267,8 @@ async function loadPublicRepositories() {
 async function loadRecentCommits() {
   const commits = [];
   const seen = new Set();
-  let totalCount = 0;
   const pages = 10;
-  const query = encodeURIComponent(`author:${profileUser} merge:false`);
+  const query = encodeURIComponent(`author:${profileUser} merge:false is:public`);
 
   for (let page = 1; page <= pages; page++) {
     const result = await requestGitHub(
@@ -277,7 +276,6 @@ async function loadRecentCommits() {
       `GitHub commit search page ${page}`,
     );
     if (result.incomplete_results) throw new Error("GitHub commit search returned incomplete results");
-    totalCount = result.total_count ?? totalCount;
     for (const item of result.items ?? []) {
       if (!item.commit?.author?.date || seen.has(item.sha)) continue;
       seen.add(item.sha);
@@ -288,7 +286,7 @@ async function loadRecentCommits() {
   }
 
   if (!commits.length) throw new Error(`GitHub commit search returned no public commits for ${profileUser}`);
-  return { commits, totalCount };
+  return { commits };
 }
 
 async function loadLanguageTotals(repositories) {
@@ -346,10 +344,16 @@ function analyzeCommits(commits) {
   });
   const days = dates.map((date) => localDatePart(date, { weekday: "long" }));
   const activeDates = dates.map((date) => localDatePart(date, { year: "numeric", month: "2-digit", day: "2-digit" }));
-  const repositories = commits.map((item) => item.repository.name);
-  const busiestRepository = mostCommonWithCount(repositories, "unknown");
   const busiestDay = mostCommonWithCount(days, "Wednesday");
   const busiestWindow = mostCommonWithCount(windows, "00:00–02:59");
+  const commitsPerActiveDate = [...activeDates.reduce((counts, date) => {
+    counts.set(date, (counts.get(date) || 0) + 1);
+    return counts;
+  }, new Map()).values()].sort((a, b) => a - b);
+  const midpoint = Math.floor(commitsPerActiveDate.length / 2);
+  const medianPerActiveDate = commitsPerActiveDate.length % 2
+    ? commitsPerActiveDate[midpoint]
+    : (commitsPerActiveDate[midpoint - 1] + commitsPerActiveDate[midpoint]) / 2;
   const oldest = new Date(Math.min(...dates));
   const newest = new Date(Math.max(...dates));
   const oldestYear = localDatePart(oldest, { year: "numeric" });
@@ -367,9 +371,7 @@ function analyzeCommits(commits) {
     day: busiestDay.value,
     dayCount: busiestDay.count,
     activeDateCount: new Set(activeDates).size,
-    repositoryCount: new Set(repositories).size,
-    busiestRepository: busiestRepository.value,
-    busiestCount: busiestRepository.count,
+    medianPerActiveDate,
     range: `${oldestLabel} – ${newestLabel}`,
   };
 }
@@ -379,8 +381,8 @@ function renderFactsSvg(commitItems) {
   const facts = [
     `Most commits land on ${commits.day} (${commits.dayCount} of ${commits.count})`,
     `Most common commit window: ${commits.window} (${commits.windowCount} of ${commits.count})`,
-    `${commits.repositoryCount} repositories across ${commits.activeDateCount} active dates`,
-    `Most active repository: ${commits.busiestRepository} (${commits.busiestCount} commits)`,
+    `${commits.activeDateCount} active dates represented in this sample`,
+    `Median activity: ${commits.medianPerActiveDate} commits per active date`,
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" role="img" aria-label="Recent public coding habits from ${commits.count} commits">
@@ -389,7 +391,7 @@ function renderFactsSvg(commitItems) {
   </style>
   <rect width="860" height="190" rx="18" fill="#ffffff"/>
   <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
-  <text x="34" y="68" font-size="14" fill="#0969da">Latest ${commits.count} public non-merge commits • ${xml(commits.range)} • Europe/Tirane</text>
+  <text x="34" y="68" font-size="14" fill="#0969da">${commits.count} recent indexed public default-branch non-merge commits • ${xml(commits.range)} • Europe/Tirane</text>
   ${facts.map((fact, index) => `<text x="34" y="${98 + index * 23}" font-size="18" fill="#6e7781">${xml(fact)}</text>`).join("\n  ")}
 </svg>
 `;
@@ -399,11 +401,11 @@ function formatNumber(value) {
   return new Intl.NumberFormat("en-US").format(value || 0);
 }
 
-function renderStatsSvg(profile, repositories, totalCommits) {
+function renderStatsSvg(profile, repositories) {
   const originalRepositories = repositories.filter((repository) => !repository.fork);
   const stats = [
-    { label: "Indexed commits", value: totalCommits },
     { label: "Public repos", value: profile.public_repos },
+    { label: "Original repos", value: originalRepositories.length },
     { label: "Stars earned", value: originalRepositories.reduce((sum, repository) => sum + repository.stargazers_count, 0) },
     { label: "Followers", value: profile.followers },
   ];
@@ -457,7 +459,7 @@ function renderLanguagesSvg(languages, repositoryCount) {
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="${palette.bg}"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="${palette.text}">Top languages</text>
-  <text x="28" y="56" font-size="12" fill="${palette.muted}">${repositoryCount} owned, non-fork public repos</text>
+  <text x="28" y="56" font-size="12" fill="${palette.muted}">${repositoryCount} owned public repos • excluding forks and archives</text>
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="${palette.line}"/>
@@ -478,6 +480,6 @@ const languages = await loadLanguageTotals(languageRepositories);
 
 writeFileSync(`${outDir}/profile-anime.svg`, renderAnimeSvg(anime));
 writeFileSync(`${outDir}/profile-facts.svg`, renderFactsSvg(commitData.commits));
-writeFileSync(`${outDir}/profile-stats.svg`, renderStatsSvg(profile, repositories, commitData.totalCount));
+writeFileSync(`${outDir}/profile-stats.svg`, renderStatsSvg(profile, repositories));
 writeFileSync(`${outDir}/profile-languages.svg`, renderLanguagesSvg(languages, languageRepositories.length));
 console.log(`Generated profile cards from ${commitData.commits.length} public commits and ${languageRepositories.length} repositories`);

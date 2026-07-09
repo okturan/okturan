@@ -78,5 +78,5 @@ Full-stack developer building practical software, automation, and AI-assisted en
 </p>
 
 <p>
-  <img alt="Mildly interesting coding facts" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
+  <img alt="Recent public coding habits from 500 commits" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
 </p>
