@@ -6,8 +6,8 @@
   <rect width="860" height="190" rx="18" fill="#ffffff"/>
   <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
   <text x="34" y="68" font-size="14" fill="#0969da">500 recent indexed public default-branch non-merge commits • Oct 16, 2025 – Jul 10, 2026 • Europe/Tirane</text>
-  <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Friday (213 of 500)</text>
-  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 00:00–02:59 (99 of 500)</text>
+  <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Friday (214 of 500)</text>
+  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 00:00–02:59 (100 of 500)</text>
   <text x="34" y="144" font-size="18" fill="#6e7781">42 active dates represented in this sample</text>
   <text x="34" y="167" font-size="18" fill="#6e7781">Median activity: 3.5 commits per active date</text>
 </svg>
