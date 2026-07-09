@@ -61,8 +61,8 @@ Full-stack developer building practical software, automation, and AI-assisted en
 ## GitHub Snapshot
 
 <p>
-  <img height="165" alt="Okan's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=okturan&show_icons=true&hide_border=true&rank_icon=github&theme=tokyonight">
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=okturan&layout=compact&hide_border=true&theme=tokyonight">
+  <img width="410" alt="Okan's GitHub stats" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-stats.svg">
+  <img width="410" alt="Top languages across Okan's public repositories" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-languages.svg">
 </p>
 
 <p>
