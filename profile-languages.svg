@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 27.5%, Swift 17.1%, JavaScript 15.8%, Java 13.8%, Ruby 6.6%, Python 5.5%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 27.4%, Swift 17.4%, JavaScript 15.8%, Java 13.7%, Ruby 6.6%, Python 5.5%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,20 +7,20 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="100.22" height="10" fill="#3178c6"/>
-    <rect x="128.22" y="70" width="62.08" height="10" fill="#f05138"/>
-    <rect x="190.30" y="70" width="57.60" height="10" fill="#f1e05a"/>
-    <rect x="247.89" y="70" width="50.08" height="10" fill="#b07219"/>
-    <rect x="297.97" y="70" width="24.03" height="10" fill="#701516"/>
-    <rect x="322.00" y="70" width="20.20" height="10" fill="#3572a5"/>
-    <rect x="342.19" y="70" width="17.74" height="10" fill="#dea584"/>
-    <rect x="359.93" y="70" width="16.11" height="10" fill="#e34c26"/>
-    <rect x="376.04" y="70" width="9.52" height="10" fill="#563d7c"/>
-    <rect x="385.55" y="70" width="3.21" height="10" fill="#89e051"/>
+    <rect x="28.00" y="70" width="99.77" height="10" fill="#3178c6"/>
+    <rect x="127.77" y="70" width="63.43" height="10" fill="#f05138"/>
+    <rect x="191.20" y="70" width="57.34" height="10" fill="#f1e05a"/>
+    <rect x="248.54" y="70" width="49.85" height="10" fill="#b07219"/>
+    <rect x="298.39" y="70" width="23.92" height="10" fill="#701516"/>
+    <rect x="322.31" y="70" width="20.11" height="10" fill="#3572a5"/>
+    <rect x="342.42" y="70" width="17.66" height="10" fill="#dea584"/>
+    <rect x="360.08" y="70" width="16.03" height="10" fill="#e34c26"/>
+    <rect x="376.11" y="70" width="9.47" height="10" fill="#563d7c"/>
+    <rect x="385.58" y="70" width="3.20" height="10" fill="#89e051"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#3178c6"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">TypeScript</text>
-  <text x="191" y="108" text-anchor="end" font-size="12" fill="#8b949e">28%</text>
+  <text x="191" y="108" text-anchor="end" font-size="12" fill="#8b949e">27%</text>
   <circle cx="226" cy="103" r="5" fill="#f05138"/>
   <text x="238" y="108" font-size="13" font-weight="600" fill="#e6edf3">Swift</text>
   <text x="385" y="108" text-anchor="end" font-size="12" fill="#8b949e">17%</text>
