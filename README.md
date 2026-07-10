@@ -47,10 +47,9 @@ Full-stack developer building practical software, automation, and AI-assisted en
   <a href="https://openhands.dev/"><img alt="OpenHands" src="https://img.shields.io/badge/OpenHands-Agent-10B981?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-- Codex for terminal workflows.
-- Claude Code for repo-aware edits, explanation, git workflows, and agentic coding sessions.
-- Hermes for persistent agent memory and long-running personal automation.
-- Factory Droid and OpenHands for heavier agentic software-development work.
+- Codex and Claude Code for agentic coding on the terminal.
+- Hermes for messaging app integrations and and out of the box memory management.
+- Factory Droid and OpenHands when I'm feeling adventurous.
 
 ## Favorite Anime
 
