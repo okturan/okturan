@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 27.4%, Swift 17.4%, JavaScript 15.8%, Java 13.7%, Ruby 6.6%, Python 5.5%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 27.0%, Swift 18.8%, JavaScript 15.5%, Java 13.5%, Ruby 6.5%, Python 5.4%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,33 +7,33 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="99.77" height="10" fill="#3178c6"/>
-    <rect x="127.77" y="70" width="63.43" height="10" fill="#f05138"/>
-    <rect x="191.20" y="70" width="57.34" height="10" fill="#f1e05a"/>
-    <rect x="248.54" y="70" width="49.85" height="10" fill="#b07219"/>
-    <rect x="298.39" y="70" width="23.92" height="10" fill="#701516"/>
-    <rect x="322.31" y="70" width="20.11" height="10" fill="#3572a5"/>
-    <rect x="342.42" y="70" width="17.66" height="10" fill="#dea584"/>
-    <rect x="360.08" y="70" width="16.03" height="10" fill="#e34c26"/>
-    <rect x="376.11" y="70" width="9.47" height="10" fill="#563d7c"/>
-    <rect x="385.58" y="70" width="3.20" height="10" fill="#89e051"/>
+    <rect x="28.00" y="70" width="98.18" height="10" fill="#3178c6"/>
+    <rect x="126.18" y="70" width="68.27" height="10" fill="#f05138"/>
+    <rect x="194.45" y="70" width="56.37" height="10" fill="#f1e05a"/>
+    <rect x="250.82" y="70" width="49.01" height="10" fill="#b07219"/>
+    <rect x="299.83" y="70" width="23.52" height="10" fill="#701516"/>
+    <rect x="323.34" y="70" width="19.76" height="10" fill="#3572a5"/>
+    <rect x="343.11" y="70" width="17.36" height="10" fill="#dea584"/>
+    <rect x="360.47" y="70" width="15.76" height="10" fill="#e34c26"/>
+    <rect x="376.23" y="70" width="9.31" height="10" fill="#563d7c"/>
+    <rect x="385.54" y="70" width="3.29" height="10" fill="#89e051"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#3178c6"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">TypeScript</text>
   <text x="191" y="108" text-anchor="end" font-size="12" fill="#8b949e">27%</text>
   <circle cx="226" cy="103" r="5" fill="#f05138"/>
   <text x="238" y="108" font-size="13" font-weight="600" fill="#e6edf3">Swift</text>
-  <text x="385" y="108" text-anchor="end" font-size="12" fill="#8b949e">17%</text>
+  <text x="385" y="108" text-anchor="end" font-size="12" fill="#8b949e">19%</text>
   <circle cx="32" cy="130" r="5" fill="#f1e05a"/>
   <text x="44" y="135" font-size="13" font-weight="600" fill="#e6edf3">JavaScript</text>
-  <text x="191" y="135" text-anchor="end" font-size="12" fill="#8b949e">16%</text>
+  <text x="191" y="135" text-anchor="end" font-size="12" fill="#8b949e">15%</text>
   <circle cx="226" cy="130" r="5" fill="#b07219"/>
   <text x="238" y="135" font-size="13" font-weight="600" fill="#e6edf3">Java</text>
-  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">14%</text>
+  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">13%</text>
   <circle cx="32" cy="157" r="5" fill="#701516"/>
   <text x="44" y="162" font-size="13" font-weight="600" fill="#e6edf3">Ruby</text>
-  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">6.6%</text>
+  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">6.5%</text>
   <circle cx="226" cy="157" r="5" fill="#3572a5"/>
   <text x="238" y="162" font-size="13" font-weight="600" fill="#e6edf3">Python</text>
-  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.5%</text>
+  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.4%</text>
 </svg>
