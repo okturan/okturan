@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 27.0%, Swift 18.8%, JavaScript 15.5%, Java 13.5%, Ruby 6.5%, Python 5.4%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 23.2%, HTML 17.2%, Swift 16.2%, JavaScript 13.7%, Java 11.6%, Ruby 5.6%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
-  <text x="28" y="56" font-size="12" fill="#8b949e">48 owned public repos • excluding forks and archives</text>
+  <text x="28" y="56" font-size="12" fill="#8b949e">49 owned public repos • excluding forks and archives</text>
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="98.18" height="10" fill="#3178c6"/>
-    <rect x="126.18" y="70" width="68.27" height="10" fill="#f05138"/>
-    <rect x="194.45" y="70" width="56.37" height="10" fill="#f1e05a"/>
-    <rect x="250.82" y="70" width="49.01" height="10" fill="#b07219"/>
-    <rect x="299.83" y="70" width="23.52" height="10" fill="#701516"/>
-    <rect x="323.34" y="70" width="19.76" height="10" fill="#3572a5"/>
-    <rect x="343.11" y="70" width="17.36" height="10" fill="#dea584"/>
-    <rect x="360.47" y="70" width="15.76" height="10" fill="#e34c26"/>
-    <rect x="376.23" y="70" width="9.31" height="10" fill="#563d7c"/>
-    <rect x="385.54" y="70" width="3.29" height="10" fill="#89e051"/>
+    <rect x="28.00" y="70" width="84.58" height="10" fill="#3178c6"/>
+    <rect x="112.58" y="70" width="62.50" height="10" fill="#e34c26"/>
+    <rect x="175.09" y="70" width="58.82" height="10" fill="#f05138"/>
+    <rect x="233.91" y="70" width="49.79" height="10" fill="#f1e05a"/>
+    <rect x="283.70" y="70" width="42.22" height="10" fill="#b07219"/>
+    <rect x="325.92" y="70" width="20.26" height="10" fill="#701516"/>
+    <rect x="346.18" y="70" width="17.03" height="10" fill="#3572a5"/>
+    <rect x="363.21" y="70" width="14.95" height="10" fill="#dea584"/>
+    <rect x="378.16" y="70" width="8.27" height="10" fill="#563d7c"/>
+    <rect x="386.44" y="70" width="2.84" height="10" fill="#89e051"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#3178c6"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">TypeScript</text>
-  <text x="191" y="108" text-anchor="end" font-size="12" fill="#8b949e">27%</text>
-  <circle cx="226" cy="103" r="5" fill="#f05138"/>
-  <text x="238" y="108" font-size="13" font-weight="600" fill="#e6edf3">Swift</text>
-  <text x="385" y="108" text-anchor="end" font-size="12" fill="#8b949e">19%</text>
-  <circle cx="32" cy="130" r="5" fill="#f1e05a"/>
-  <text x="44" y="135" font-size="13" font-weight="600" fill="#e6edf3">JavaScript</text>
-  <text x="191" y="135" text-anchor="end" font-size="12" fill="#8b949e">15%</text>
-  <circle cx="226" cy="130" r="5" fill="#b07219"/>
-  <text x="238" y="135" font-size="13" font-weight="600" fill="#e6edf3">Java</text>
-  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">13%</text>
-  <circle cx="32" cy="157" r="5" fill="#701516"/>
-  <text x="44" y="162" font-size="13" font-weight="600" fill="#e6edf3">Ruby</text>
-  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">6.5%</text>
-  <circle cx="226" cy="157" r="5" fill="#3572a5"/>
-  <text x="238" y="162" font-size="13" font-weight="600" fill="#e6edf3">Python</text>
-  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.4%</text>
+  <text x="191" y="108" text-anchor="end" font-size="12" fill="#8b949e">23%</text>
+  <circle cx="226" cy="103" r="5" fill="#e34c26"/>
+  <text x="238" y="108" font-size="13" font-weight="600" fill="#e6edf3">HTML</text>
+  <text x="385" y="108" text-anchor="end" font-size="12" fill="#8b949e">17%</text>
+  <circle cx="32" cy="130" r="5" fill="#f05138"/>
+  <text x="44" y="135" font-size="13" font-weight="600" fill="#e6edf3">Swift</text>
+  <text x="191" y="135" text-anchor="end" font-size="12" fill="#8b949e">16%</text>
+  <circle cx="226" cy="130" r="5" fill="#f1e05a"/>
+  <text x="238" y="135" font-size="13" font-weight="600" fill="#e6edf3">JavaScript</text>
+  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">14%</text>
+  <circle cx="32" cy="157" r="5" fill="#b07219"/>
+  <text x="44" y="162" font-size="13" font-weight="600" fill="#e6edf3">Java</text>
+  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">12%</text>
+  <circle cx="226" cy="157" r="5" fill="#701516"/>
+  <text x="238" y="162" font-size="13" font-weight="600" fill="#e6edf3">Ruby</text>
+  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.6%</text>
 </svg>
