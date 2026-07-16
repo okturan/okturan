@@ -14,7 +14,7 @@ Full-stack and tooling engineer building TypeScript, Swift, and Java products, d
 
 ### [claude-statusblocks](https://github.com/okturan/claude-statusblocks)
 
-Zero-dependency npm CLI for Claude Code whose status cards adapt to terminal width through exhaustive bin packing. Shipped with cross-platform CI, automated npm publishing, and a deterministic terminal preview. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
+Zero-dependency npm CLI for Claude Code whose status cards adapt to terminal width through exhaustive bin packing. Shipped with cross-platform CI, automated npm publishing, and a built-in terminal preview. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
 
 ### [dirwiz](https://github.com/okturan/dirwiz)
 
@@ -22,7 +22,7 @@ Native macOS filesystem explorer combining Swift, Metal-rendered treemaps, dupli
 
 ### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
 
-Client-side Google Cloud security-audit dashboard that turns project, API-key, service, and IAM exports into findings, charts, and a ReactFlow relationship graph. **[architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+Client-side Google Cloud security-audit dashboard that discovers projects, API keys, services, and IAM policies, then turns them into findings, charts, and a ReactFlow relationship graph. **[architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
 
 ### [darkex-404-lab](https://github.com/okturan/darkex-404-lab)
 
@@ -59,9 +59,7 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
   <a href="https://openhands.dev/"><img alt="OpenHands" src="https://img.shields.io/badge/OpenHands-Agent-10B981?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-- Codex and Claude Code for agentic coding on the terminal.
-- Hermes for messaging integrations and out-of-the-box memory management.
-- Factory Droid and OpenHands when I'm feeling adventurous.
+- I compare coding agents across implementation and verification workflows while keeping source control, tests, and human review as the acceptance boundary.
 
 ## Favorite Anime
 
