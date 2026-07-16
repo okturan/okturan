@@ -22,7 +22,15 @@ Native macOS filesystem explorer combining Swift, Metal-rendered treemaps, dupli
 
 ### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
 
-Client-side Google Cloud security-audit dashboard that discovers projects, API keys, services, and IAM policies, then turns them into findings, charts, and a ReactFlow relationship graph. **[architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+Client-side Google Cloud security-audit dashboard that discovers projects, API keys, services, and IAM policies, then turns them into findings, charts, and a ReactFlow relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+
+### [QuarterLink](https://github.com/okturan/quarterlink)
+
+Zero-install browser arcade for private two-player sessions: game files remain on the host, WebRTC carries gameplay, and a Cloudflare Durable Object handles signaling and room coordination. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
+
+### [foljapp](https://github.com/okturan/foljapp)
+
+Albanian verb-conjugation reference built as a TypeScript monorepo with a reusable morphology engine, a 203-verb corpus, citation-aware reference pages, 484 unit tests, and a Rust corpus indexer. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
 
 ### [darkex-404-lab](https://github.com/okturan/darkex-404-lab)
 
@@ -41,8 +49,10 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
   <img alt="Swift" src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white">
   <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white">
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
   <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
   <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
