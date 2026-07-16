@@ -7,7 +7,7 @@
   <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
   <text x="34" y="68" font-size="14" fill="#0969da">500 recent indexed public default-branch non-merge commits • Feb 26 – Jul 16, 2026 • Europe/Tirane</text>
   <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Friday (208 of 500)</text>
-  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 00:00–02:59 (90 of 500)</text>
+  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 00:00–02:59 (87 of 500)</text>
   <text x="34" y="144" font-size="18" fill="#6e7781">36 active dates represented in this sample</text>
   <text x="34" y="167" font-size="18" fill="#6e7781">Median activity: 5.5 commits per active date</text>
 </svg>
