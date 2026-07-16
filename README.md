@@ -1,6 +1,6 @@
 # Okan Erturan
 
-Full-stack developer building practical software, automation, and AI-assisted engineering workflows.
+Full-stack and tooling engineer building TypeScript, Swift, and Java products, developer tools, and AI-assisted workflows.
 
 <p>
   <a href="mailto:okanert@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-okanert%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
@@ -10,30 +10,42 @@ Full-stack developer building practical software, automation, and AI-assisted en
   <a href="https://leetcode.com/okanerturan/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-okanerturan-FFA116?style=flat-square&logo=leetcode&logoColor=black"></a>
 </p>
 
-<img alt="Typing intro" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=800&color=36BCF7&width=860&lines=Full-stack+developer;AI-assisted+builder;token+maxxing;JavaScript+%2F+Java+%2F+Ruby+%2F+Bash">
+## Featured Work
+
+### [claude-statusblocks](https://github.com/okturan/claude-statusblocks)
+
+Zero-dependency npm CLI for Claude Code whose status cards adapt to terminal width through exhaustive bin packing. Shipped with cross-platform CI, automated npm publishing, and a deterministic terminal preview. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
+
+### [dirwiz](https://github.com/okturan/dirwiz)
+
+Native macOS filesystem explorer combining Swift, Metal-rendered treemaps, duplicate and hardlink safety checks, and CLI workflows. **[source](https://github.com/okturan/dirwiz) · [v1.0.0 release](https://github.com/okturan/dirwiz/releases/tag/v1.0.0)**
+
+### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
+
+Client-side Google Cloud security-audit dashboard that turns project, API-key, service, and IAM exports into findings, charts, and a ReactFlow relationship graph. **[architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+
+### [darkex-404-lab](https://github.com/okturan/darkex-404-lab)
+
+A cohesive gallery of interactive WebGPU and Three.js particle systems built as technically distinctive 404 experiences. **[live gallery](https://okturan.github.io/darkex-404-lab/) · [source](https://github.com/okturan/darkex-404-lab)**
 
 ## Focus
 
-- Shipping fullstack features, automation, scripts, and operational tooling.
-- Using AI coding agents as part of the real development loop. Working with real business data for real business decisions.
+- Shipping native applications, web products, developer tools, automation, and operational systems.
+- Building visual and data-heavy interfaces with explicit architecture, testing, and delivery evidence.
+- Using coding agents inside a reviewable engineering loop rather than as a substitute for verification.
 - Based in Tirana, Albania.
 
 ## Stack
 
 <p>
-  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img alt="Swift" src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white">
   <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111">
-  <img alt="Ruby" src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white">
-  <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img alt="Sass" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
-  <img alt="Figma" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
-  <img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-  <img alt="Zed" src="https://img.shields.io/badge/Zed-084CCF?style=for-the-badge&logo=zedindustries&logoColor=white">
-  <img alt="Ghostty" src="https://img.shields.io/badge/Ghostty-000000?style=for-the-badge&logo=ghostty&logoColor=white">
+  <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
+  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
 </p>
 
@@ -48,7 +60,7 @@ Full-stack developer building practical software, automation, and AI-assisted en
 </p>
 
 - Codex and Claude Code for agentic coding on the terminal.
-- Hermes for messaging app integrations and and out of the box memory management.
+- Hermes for messaging integrations and out-of-the-box memory management.
 - Factory Droid and OpenHands when I'm feeling adventurous.
 
 ## Favorite Anime
