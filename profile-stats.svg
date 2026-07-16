@@ -6,9 +6,9 @@
   <path d="M210 58V170" stroke="#30363d"/>
   <path d="M24 113H396" stroke="#30363d"/>
   
-  <text x="34" y="84" font-size="25" font-weight="800" fill="#58a6ff">54</text>
+  <text x="34" y="84" font-size="25" font-weight="800" fill="#58a6ff">56</text>
   <text x="34" y="106" font-size="13" fill="#8b949e">Public repos</text>
-  <text x="225" y="84" font-size="25" font-weight="800" fill="#e6edf3">49</text>
+  <text x="225" y="84" font-size="25" font-weight="800" fill="#e6edf3">51</text>
   <text x="225" y="106" font-size="13" fill="#8b949e">Original repos</text>
   <text x="34" y="151" font-size="25" font-weight="800" fill="#e6edf3">22</text>
   <text x="34" y="173" font-size="13" fill="#8b949e">Stars earned</text>
