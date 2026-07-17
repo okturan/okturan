@@ -74,7 +74,9 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 ## Favorite Anime
 
 <p>
-  <img alt="Favorite anime" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime.svg">
+  <a href="https://myanimelist.net/anime/13125/Shinsekai_yori"><img width="278" alt="Shinsekai yori on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-13125.svg"></a>
+  <a href="https://myanimelist.net/anime/2246/Mononoke"><img width="278" alt="Mononoke on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-2246.svg"></a>
+  <a href="https://myanimelist.net/anime/57334/Dandadan"><img width="278" alt="Dandadan on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-171018.svg"></a>
 </p>
 
 ## GitHub Snapshot
