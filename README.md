@@ -30,7 +30,7 @@ Zero-install browser arcade for private two-player sessions: game files remain o
 
 ### [foljapp](https://github.com/okturan/foljapp)
 
-Albanian verb-conjugation reference built as a TypeScript monorepo with a reusable morphology engine, a 203-verb corpus, citation-aware reference pages, 484 unit tests, and a Rust corpus indexer. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
+Albanian verb-conjugation reference built as a TypeScript monorepo around a reusable morphology engine, a 203-verb corpus, citation-aware reference pages, a comprehensive linguistic regression suite, and a Rust corpus indexer. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
 
 ### [darkex-404-lab](https://github.com/okturan/darkex-404-lab)
 
