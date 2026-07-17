@@ -12,15 +12,15 @@ const githubToken = process.env.GITHUB_TOKEN || "";
 const requestTimeoutMs = 15_000;
 
 const favoriteAnime = [
-  { id: 13125, label: "Shinsekai yori" },
-  { id: 2246, label: "Mononoke" },
-  { id: 171018, label: "DAN DA DAN" },
+  { id: 13125, label: "Shinsekai yori", malUrl: "https://myanimelist.net/anime/13125/Shinsekai_yori" },
+  { id: 2246, label: "Mononoke", malUrl: "https://myanimelist.net/anime/2246/Mononoke" },
+  { id: 171018, label: "DAN DA DAN", malUrl: "https://myanimelist.net/anime/57334/Dandadan" },
 ];
 
 const animeFallbacks = new Map([
-  [13125, { title: "Shinsekai yori", year: 2012, episodes: 25, score: 84, genres: ["Drama", "Mystery", "Psychological"], siteUrl: "https://anilist.co/anime/13125/Shinsekai-yori/" }],
-  [2246, { title: "Mononoke", year: 2007, episodes: 12, score: 82, genres: ["Horror", "Mystery", "Supernatural"], siteUrl: "https://anilist.co/anime/2246/Mononoke/" }],
-  [171018, { title: "DAN DA DAN", year: 2024, episodes: 12, score: 84, genres: ["Action", "Comedy", "Supernatural"], siteUrl: "https://anilist.co/anime/171018/DAN-DA-DAN/" }],
+  [13125, { title: "Shinsekai yori", year: 2012, episodes: 25, score: 84, genres: ["Drama", "Mystery", "Psychological"] }],
+  [2246, { title: "Mononoke", year: 2007, episodes: 12, score: 82, genres: ["Horror", "Mystery", "Supernatural"] }],
+  [171018, { title: "DAN DA DAN", year: 2024, episodes: 12, score: 84, genres: ["Action", "Comedy", "Supernatural"] }],
 ]);
 
 const palette = {
@@ -180,7 +180,7 @@ async function loadAnime() {
     console.warn(`AniList unavailable, using fallback metadata: ${error.message}`);
   }
   const byId = new Map(records.map((anime) => [anime.id, anime]));
-  return Promise.all(favoriteAnime.map(async ({ id, label }) => {
+  return Promise.all(favoriteAnime.map(async ({ id, label, malUrl }) => {
     const fallback = animeFallbacks.get(id);
     const record = byId.get(id);
     const title = label || record?.title?.english || record?.title?.romaji || fallback.title;
@@ -191,7 +191,7 @@ async function loadAnime() {
       episodes: record?.episodes || fallback.episodes,
       score: record?.averageScore || fallback.score,
       genres: (record?.genres?.length ? record.genres : fallback.genres).slice(0, 3),
-      siteUrl: record?.siteUrl || fallback.siteUrl,
+      siteUrl: malUrl,
       color: record?.coverImage?.color || palette.blue,
       cover: await imageDataUri(record?.coverImage?.extraLarge || record?.coverImage?.large),
     };
@@ -235,13 +235,14 @@ function animeCard(anime, index) {
 
 function renderAnimeSvg(anime) {
   const labels = anime.map(({ title }) => title).join(", ");
+  const width = 276 * anime.length + 32;
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="220" role="img" aria-label="Favorite anime: ${xml(labels)}">
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="220" role="img" aria-label="Favorite anime: ${xml(labels)}">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     a { cursor: pointer; }
   </style>
-  <rect width="860" height="220" rx="18" fill="${palette.bg}"/>
+  <rect width="${width}" height="220" rx="18" fill="${palette.bg}"/>
   ${anime.map(animeCard).join("\n")}
 </svg>
 `;
@@ -479,6 +480,9 @@ const languageRepositories = repositories.filter((repository) => !repository.for
 const languages = await loadLanguageTotals(languageRepositories);
 
 writeFileSync(`${outDir}/profile-anime.svg`, renderAnimeSvg(anime));
+for (const favorite of anime) {
+  writeFileSync(`${outDir}/profile-anime-${favorite.id}.svg`, renderAnimeSvg([favorite]));
+}
 writeFileSync(`${outDir}/profile-facts.svg`, renderFactsSvg(commitData.commits));
 writeFileSync(`${outDir}/profile-stats.svg`, renderStatsSvg(profile, repositories));
 writeFileSync(`${outDir}/profile-languages.svg`, renderLanguagesSvg(languages, languageRepositories.length));
