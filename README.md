@@ -24,9 +24,9 @@ Native macOS filesystem explorer combining Swift, Metal-rendered treemaps, dupli
 
 Client-side Google Cloud security-audit dashboard that discovers projects, API keys, services, and IAM policies, then turns them into findings, charts, and a ReactFlow relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
 
-### [QuarterLink](https://github.com/okturan/quarterlink)
+### [tinyvoice](https://github.com/okturan/tinyvoice)
 
-Zero-install browser arcade for private two-player sessions: game files remain on the host, WebRTC carries gameplay, and a Cloudflare Durable Object handles signaling and room coordination. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
+Browser push-to-talk that explores what useful speech looks like at extremely small payloads. The codec runs locally, quality tiers stay explicit, QR links make joining simple, and the relay is separated from model execution. **[live PTT](https://tinyvoice.pages.dev/) · [codec, wire format, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
 
 ### [foljapp](https://github.com/okturan/foljapp)
 
@@ -35,6 +35,13 @@ Albanian verb-conjugation reference built as a TypeScript monorepo around a reus
 ### [darkex-404-lab](https://github.com/okturan/darkex-404-lab)
 
 A cohesive gallery of interactive WebGPU and Three.js particle systems built as technically distinctive 404 experiences. **[live gallery](https://okturan.github.io/darkex-404-lab/) · [source](https://github.com/okturan/darkex-404-lab)**
+
+## More projects I like
+
+- **[github-blocks](https://github.com/okturan/github-blocks)** — animated SVG modules that turn public GitHub data into contribution-graph battles, media panels, and configurable profile art. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
+- **[epoch-td](https://github.com/okturan/epoch-td)** — a single-file tower-defense game with branching doctrines, tower specialization, map variety, and a headless balance simulator behind the live build. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
+- **[QuarterLink](https://github.com/okturan/quarterlink)** — a zero-install browser arcade where game files stay on the host, WebRTC carries play, and a Durable Object handles signaling. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
+- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — local MediaPipe hand and face tracking driving a Three.js particle field, with synthetic browser verification instead of recorded webcam input. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
 
 ## Focus
 
