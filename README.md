@@ -101,3 +101,9 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 <p>
   <img alt="Recent public coding habits from 500 commits" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
 </p>
+
+## License
+
+The original profile prose, layout, generator code, and repository-owned workflow configuration are licensed under the [MIT License](./LICENSE).
+
+This license does not cover third-party badges or services, AniList metadata or embedded anime cover artwork, linked MyAnimeList content, GitHub-supplied profile/repository/contribution data, or output produced by third-party actions. Generated assets are covered only to the extent that they contain original repository-authored code or design; embedded artwork and source data remain subject to their respective owners' terms.
