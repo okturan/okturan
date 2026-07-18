@@ -98,11 +98,13 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 </p>
 
 <p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg">
-    <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
-  </picture>
+  <a href="https://okturan.github.io/github-blocks/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg">
+      <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
+    </picture>
+  </a>
 </p>
 
 <p>

@@ -54,6 +54,12 @@ const animeImages = [...anime.matchAll(/<img\b[^>]*alt="[^"]+"[^>]*src="https:\/
 assert(animeLinks.length === 3, `Expected 3 MyAnimeList destinations, found ${animeLinks.length}`);
 assert(animeImages.length === 3, `Expected 3 accessible generated anime cards, found ${animeImages.length}`);
 
+const laneDefenseLink = "https://okturan.github.io/github-blocks/";
+assert(readme.includes(`<a href="${laneDefenseLink}">`), "Lane Defense visual must link to the GitHub Blocks configurator");
+assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg"), "Missing dark Lane Defense output");
+assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg"), "Missing light Lane Defense output");
+assert(!readme.includes("github-contribution-grid-snake"), "Profile README should not reference the retired contribution snake");
+
 const images = [...readme.matchAll(/<img\b([^>]*)>/g)];
 assert(images.length > 0, "Profile README must contain evidence images");
 for (const image of images) {
