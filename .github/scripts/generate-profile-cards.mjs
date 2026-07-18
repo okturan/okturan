@@ -114,24 +114,6 @@ function xml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function textLines(text, maxLength, maxLines = 2) {
-  const words = String(text ?? "").split(/\s+/).filter(Boolean);
-  const lines = [];
-  let current = "";
-  for (const word of words) {
-    const next = current ? `${current} ${word}` : word;
-    if (next.length > maxLength && current) {
-      lines.push(current);
-      current = word;
-    } else {
-      current = next;
-    }
-    if (lines.length === maxLines) break;
-  }
-  if (current && lines.length < maxLines) lines.push(current);
-  return lines;
-}
-
 async function requestAniList(ids) {
   const query = `
     query ($ids: [Int]) {
@@ -206,43 +188,42 @@ function placeholderCover(x, y, w, h, color, title) {
   `;
 }
 
+// Cinematic strip block from github-blocks: cover art as card backdrop under a
+// bottom gradient, title + year overlaid. 896 wide = GitHub's README column.
 function animeCard(anime, index) {
-  const cardWidth = 258;
-  const x = 34 + index * 276;
-  const y = 32;
-  const coverX = x + 16;
-  const coverY = y + 18;
-  const coverW = 82;
-  const coverH = 116;
-  const titleLines = textLines(anime.title, 16, 2);
-  const titleSvg = titleLines.map((line, i) =>
-    `<tspan x="${x + 112}" dy="${i === 0 ? 0 : 22}">${xml(line)}</tspan>`
-  ).join("");
-  const meta = `${anime.year} / ${anime.episodes} episodes`;
+  const cardWidth = 286;
+  const cardHeight = 190;
+  const x = index * 305;
   const cover = anime.cover
-    ? `<image href="${anime.cover}" x="${coverX}" y="${coverY}" width="${coverW}" height="${coverH}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cover-${index})"/>`
-    : placeholderCover(coverX, coverY, coverW, coverH, anime.color, anime.title);
+    ? `<image href="${anime.cover}" x="${x}" y="0" width="${cardWidth}" height="${cardHeight}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cover-${index})"/>`
+    : placeholderCover(x, 0, cardWidth, cardHeight, anime.color, anime.title);
   return `
     <a href="${xml(anime.siteUrl)}">
-      <rect x="${x}" y="${y}" width="${cardWidth}" height="154" rx="14" fill="${palette.panel}" stroke="${palette.line}"/>
-      <clipPath id="cover-${index}"><rect x="${coverX}" y="${coverY}" width="${coverW}" height="${coverH}" rx="10"/></clipPath>
+      <clipPath id="cover-${index}"><rect x="${x}" y="0" width="${cardWidth}" height="${cardHeight}" rx="14"/></clipPath>
       ${cover}
-      <text x="${x + 112}" y="${y + 44}" font-size="19" font-weight="700" fill="${palette.text}">${titleSvg}</text>
-      <text x="${x + 112}" y="${y + 93}" font-size="12" fill="${palette.muted}">${xml(meta)}</text>
+      <rect x="${x}" y="0" width="${cardWidth}" height="${cardHeight}" rx="14" fill="url(#strip-fade)" clip-path="url(#cover-${index})"/>
+      <text x="${x + 18}" y="${cardHeight - 24}" font-size="18" font-weight="800" fill="#ffffff">${xml(anime.title)}<tspan dx="9" font-size="12.5" font-weight="500" fill="${palette.text}" opacity="0.75">${anime.year}</tspan></text>
+      <rect x="${x + 0.5}" y="0.5" width="${cardWidth - 1}" height="${cardHeight - 1}" rx="13.5" fill="none" stroke="#f0f6fc" stroke-opacity="0.14"/>
     </a>
   `;
 }
 
 function renderAnimeSvg(anime) {
   const labels = anime.map(({ title }) => title).join(", ");
-  const width = 276 * anime.length + 32;
+  const width = 305 * anime.length - 19;
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="220" role="img" aria-label="Favorite anime: ${xml(labels)}">
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="190" role="img" aria-label="Favorite anime: ${xml(labels)}">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     a { cursor: pointer; }
   </style>
-  <rect width="${width}" height="220" rx="18" fill="${palette.bg}"/>
+  <defs>
+    <linearGradient id="strip-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${palette.bg}" stop-opacity="0.06"/>
+      <stop offset="0.5" stop-color="${palette.bg}" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="${palette.bg}" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
   ${anime.map(animeCard).join("\n")}
 </svg>
 `;
