@@ -41,7 +41,7 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 - Shipping native applications, web products, developer tools, automation, and operational systems.
 - Building visual and data-heavy interfaces with explicit architecture, testing, and delivery evidence.
 - Using coding agents inside a reviewable engineering loop rather than as a substitute for verification.
-- Based in Tirana, Albania.
+- Currently in Tirana, Albania.
 
 ## Stack
 
