@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 22.9%, JavaScript 22.7%, Swift 17.0%, HTML 13.7%, Java 9.7%, Python 5.4%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: TypeScript 22.9%, JavaScript 22.8%, Swift 17.0%, HTML 13.7%, Java 9.7%, Python 5.4%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,16 +7,16 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="83.47" height="10" fill="#3178c6"/>
-    <rect x="111.47" y="70" width="82.70" height="10" fill="#f1e05a"/>
-    <rect x="194.17" y="70" width="61.80" height="10" fill="#f05138"/>
-    <rect x="255.98" y="70" width="49.81" height="10" fill="#e34c26"/>
-    <rect x="305.78" y="70" width="35.39" height="10" fill="#b07219"/>
-    <rect x="341.17" y="70" width="19.50" height="10" fill="#3572a5"/>
-    <rect x="360.67" y="70" width="12.89" height="10" fill="#dea584"/>
-    <rect x="373.56" y="70" width="9.50" height="10" fill="#563d7c"/>
-    <rect x="383.06" y="70" width="4.06" height="10" fill="#701516"/>
-    <rect x="387.11" y="70" width="3.20" height="10" fill="#89e051"/>
+    <rect x="28.00" y="70" width="83.36" height="10" fill="#3178c6"/>
+    <rect x="111.36" y="70" width="83.06" height="10" fill="#f1e05a"/>
+    <rect x="194.43" y="70" width="61.72" height="10" fill="#f05138"/>
+    <rect x="256.15" y="70" width="49.75" height="10" fill="#e34c26"/>
+    <rect x="305.89" y="70" width="35.34" height="10" fill="#b07219"/>
+    <rect x="341.24" y="70" width="19.48" height="10" fill="#3572a5"/>
+    <rect x="360.71" y="70" width="12.87" height="10" fill="#dea584"/>
+    <rect x="373.58" y="70" width="9.48" height="10" fill="#563d7c"/>
+    <rect x="383.07" y="70" width="4.05" height="10" fill="#701516"/>
+    <rect x="387.12" y="70" width="3.20" height="10" fill="#89e051"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#3178c6"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">TypeScript</text>
