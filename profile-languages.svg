@@ -7,16 +7,16 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="79.62" height="10" fill="#3178c6"/>
-    <rect x="107.62" y="70" width="76.08" height="10" fill="#f1e05a"/>
-    <rect x="183.71" y="70" width="53.37" height="10" fill="#f05138"/>
-    <rect x="237.08" y="70" width="50.94" height="10" fill="#e34c26"/>
-    <rect x="288.03" y="70" width="39.66" height="10" fill="#b07219"/>
-    <rect x="327.68" y="70" width="18.63" height="10" fill="#3572a5"/>
-    <rect x="346.32" y="70" width="16.83" height="10" fill="#701516"/>
-    <rect x="363.14" y="70" width="12.31" height="10" fill="#dea584"/>
-    <rect x="375.46" y="70" width="10.85" height="10" fill="#563d7c"/>
-    <rect x="386.31" y="70" width="3.08" height="10" fill="#89e051"/>
+    <rect x="28.00" y="70" width="79.57" height="10" fill="#3178c6"/>
+    <rect x="107.57" y="70" width="76.21" height="10" fill="#f1e05a"/>
+    <rect x="183.78" y="70" width="53.34" height="10" fill="#f05138"/>
+    <rect x="237.12" y="70" width="50.91" height="10" fill="#e34c26"/>
+    <rect x="288.03" y="70" width="39.70" height="10" fill="#b07219"/>
+    <rect x="327.73" y="70" width="18.62" height="10" fill="#3572a5"/>
+    <rect x="346.34" y="70" width="16.82" height="10" fill="#701516"/>
+    <rect x="363.16" y="70" width="12.30" height="10" fill="#dea584"/>
+    <rect x="375.47" y="70" width="10.85" height="10" fill="#563d7c"/>
+    <rect x="386.31" y="70" width="3.07" height="10" fill="#89e051"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#3178c6"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">TypeScript</text>
