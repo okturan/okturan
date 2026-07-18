@@ -2,7 +2,7 @@ name: Generate lane defense
 
 on:
   schedule:
-    - cron: "15 0 * * *" # daily, offset from the snake so the battle rotates each day
+    - cron: "15 0 * * *" # daily, so the battle rotates once per UTC day
   workflow_dispatch:
   push:
     branches:
