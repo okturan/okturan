@@ -22,10 +22,12 @@ function section(name, nextName) {
   return readme.slice(start, end);
 }
 
-const featured = section("Featured Work", "Focus");
+const featured = section("Featured Work", "More projects I like");
 const featuredProjects = [...featured.matchAll(/^### \[([^\]]+)\]\(https:\/\/github\.com\/okturan\/([^)]+)\)$/gm)];
 assert(featuredProjects.length === 6, `Expected 6 featured projects, found ${featuredProjects.length}`);
 assert(new Set(featuredProjects.map((match) => match[2].toLowerCase())).size === 6, "Featured projects must be unique");
+const expectedFeatured = ["claude-statusblocks", "dirwiz", "gcp-audit-dashboard", "tinyvoice", "foljapp", "darkex-404-lab"];
+assert(JSON.stringify(featuredProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedFeatured), "Featured Work must match the approved six-project order");
 
 for (let index = 0; index < featuredProjects.length; index += 1) {
   const start = featuredProjects[index].index;
@@ -33,6 +35,17 @@ for (let index = 0; index < featuredProjects.length; index += 1) {
   const entry = featured.slice(start, end);
   const links = [...entry.matchAll(/\[[^\]]+\]\(https:\/\/[^)]+\)/g)];
   assert(links.length >= 3, `${featuredProjects[index][1]} needs its repository link and at least two direct proof links`);
+}
+
+const more = section("More projects I like", "Focus");
+const moreProjects = [...more.matchAll(/^- \*\*\[([^\]]+)\]\(https:\/\/github\.com\/okturan\/([^)]+)\)\*\*[^\n]*$/gm)];
+const expectedMore = ["github-blocks", "epoch-td", "quarterlink", "reactive-particle-demo"];
+assert(JSON.stringify(moreProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedMore), "More-projects section must retain the curated discovery order");
+const allProjectSlugs = [...featuredProjects, ...moreProjects].map((match) => match[2].toLowerCase());
+assert(new Set(allProjectSlugs).size === allProjectSlugs.length, "Featured and discovery projects must be unique");
+for (const project of moreProjects) {
+  const links = [...project[0].matchAll(/\[[^\]]+\]\(https:\/\/[^)]+\)/g)];
+  assert(links.length >= 3, `${project[1]} needs its repository link and at least two direct proof links`);
 }
 
 const anime = section("Favorite Anime", "GitHub Snapshot");
@@ -69,4 +82,4 @@ for (const filename of readdirSync(workflowDirectory).filter((name) => /\.ya?ml$
   }
 }
 
-console.log(`Profile validation passed: ${featuredProjects.length} featured projects, ${animeLinks.length} anime links, ${images.length} accessible images, ${generatedCards.size} generated card references`);
+console.log(`Profile validation passed: ${featuredProjects.length} featured projects, ${moreProjects.length} discovery projects, ${animeLinks.length} anime links, ${images.length} accessible images, ${generatedCards.size} generated card references`);
