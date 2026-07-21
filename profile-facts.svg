@@ -5,9 +5,9 @@
   </style>
   <rect width="860" height="190" rx="18" fill="#ffffff"/>
   <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
-  <text x="34" y="68" font-size="14" fill="#0969da">500 recent indexed public default-branch non-merge commits • Apr 25 – Jul 20, 2026 • Europe/Tirane</text>
-  <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Saturday (183 of 500)</text>
-  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 21:00–23:59 (88 of 500)</text>
-  <text x="34" y="144" font-size="18" fill="#6e7781">22 active dates represented in this sample</text>
-  <text x="34" y="167" font-size="18" fill="#6e7781">Median activity: 7 commits per active date</text>
+  <text x="34" y="68" font-size="14" fill="#0969da">500 recent indexed public default-branch non-merge commits • Jun 6 – Jul 20, 2026 • Europe/Tirane</text>
+  <text x="34" y="98" font-size="18" fill="#6e7781">Most commits land on Saturday (175 of 500)</text>
+  <text x="34" y="121" font-size="18" fill="#6e7781">Most common commit window: 21:00–23:59 (82 of 500)</text>
+  <text x="34" y="144" font-size="18" fill="#6e7781">20 active dates represented in this sample</text>
+  <text x="34" y="167" font-size="18" fill="#6e7781">Median activity: 9.5 commits per active date</text>
 </svg>
