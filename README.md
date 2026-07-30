@@ -94,10 +94,6 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 </p>
 
 <p>
-  <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=okturan&theme=tokyonight&hide_border=true">
-</p>
-
-<p>
   <a href="https://okturan.github.io/github-blocks/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
