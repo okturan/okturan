@@ -32,6 +32,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           PROFILE_USER: okturan
+          HABITS_LIMIT: "500"
+          HABITS_TIMEZONE: "Europe/Tirane"
+          HABITS_WINDOW: "3"
         run: node .github/scripts/generate-profile-cards.mjs
 
       - name: Checkout output branch

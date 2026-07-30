@@ -6,7 +6,9 @@ const outDir = "dist";
 mkdirSync(outDir, { recursive: true });
 
 const profileUser = process.env.PROFILE_USER || "okturan";
-const commitSampleSize = 500;
+const commitSampleSize = Math.min(1_000, Math.max(1, Math.trunc(Number(process.env.HABITS_LIMIT) || 500)));
+const habitsTimeZone = process.env.HABITS_TIMEZONE || "Europe/Tirane";
+const habitsWindowHours = Math.min(12, Math.max(1, Math.trunc(Number(process.env.HABITS_WINDOW) || 3)));
 const githubApiUrl = process.env.GITHUB_API_URL || "https://api.github.com";
 const githubToken = process.env.GITHUB_TOKEN || "";
 const requestTimeoutMs = 15_000;
@@ -303,35 +305,29 @@ async function loadLanguageTotals(repositories) {
 }
 
 function localDatePart(date, options) {
-  return new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Tirane", ...options }).format(date);
-}
-
-function mostCommon(values, fallback) {
-  const counts = new Map();
-  for (const value of values) counts.set(value, (counts.get(value) || 0) + 1);
-  return [...counts.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0])))[0]?.[0] ?? fallback;
-}
-
-function mostCommonWithCount(values, fallback) {
-  const value = mostCommon(values, fallback);
-  return { value, count: values.filter((candidate) => candidate === value).length };
+  return new Intl.DateTimeFormat("en-US", { timeZone: habitsTimeZone, ...options }).format(date);
 }
 
 function analyzeCommits(commits) {
   const dates = commits.map((item) => new Date(item.commit.author.date));
-  const windows = dates.map((date) => {
+  const weekdayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const weekdayCounts = Object.fromEntries(weekdayNames.map((day) => [day, 0]));
+  const activeDateCounts = new Map();
+  const windowCounts = new Map();
+  for (const date of dates) {
     const hour = Number(localDatePart(date, { hour: "2-digit", hourCycle: "h23" }));
-    const start = Math.floor(hour / 3) * 3;
-    return `${String(start).padStart(2, "0")}:00–${String(start + 2).padStart(2, "0")}:59`;
-  });
-  const days = dates.map((date) => localDatePart(date, { weekday: "long" }));
-  const activeDates = dates.map((date) => localDatePart(date, { year: "numeric", month: "2-digit", day: "2-digit" }));
-  const busiestDay = mostCommonWithCount(days, "Wednesday");
-  const busiestWindow = mostCommonWithCount(windows, "00:00–02:59");
-  const commitsPerActiveDate = [...activeDates.reduce((counts, date) => {
-    counts.set(date, (counts.get(date) || 0) + 1);
-    return counts;
-  }, new Map()).values()].sort((a, b) => a - b);
+    const start = Math.floor(hour / habitsWindowHours) * habitsWindowHours;
+    const day = localDatePart(date, { weekday: "long" });
+    const activeDate = localDatePart(date, { year: "numeric", month: "2-digit", day: "2-digit" });
+    weekdayCounts[day] += 1;
+    windowCounts.set(start, (windowCounts.get(start) || 0) + 1);
+    activeDateCounts.set(activeDate, (activeDateCounts.get(activeDate) || 0) + 1);
+  }
+  const busiestDay = weekdayNames.reduce((best, day) =>
+    weekdayCounts[day] > weekdayCounts[best] ? day : best, weekdayNames[0]);
+  const busiestWindowStart = [...windowCounts.entries()]
+    .sort(([aHour, aCount], [bHour, bCount]) => bCount - aCount || aHour - bHour)[0]?.[0] ?? 0;
+  const commitsPerActiveDate = [...activeDateCounts.values()].sort((a, b) => a - b);
   const midpoint = Math.floor(commitsPerActiveDate.length / 2);
   const medianPerActiveDate = commitsPerActiveDate.length % 2
     ? commitsPerActiveDate[midpoint]
@@ -348,33 +344,52 @@ function analyzeCommits(commits) {
   const newestLabel = localDatePart(newest, { month: "short", day: "numeric", year: "numeric" });
   return {
     count: commits.length,
-    window: busiestWindow.value,
-    windowCount: busiestWindow.count,
-    day: busiestDay.value,
-    dayCount: busiestDay.count,
-    activeDateCount: new Set(activeDates).size,
+    window: `${String(busiestWindowStart).padStart(2, "0")}:00–${String((busiestWindowStart + habitsWindowHours - 1) % 24).padStart(2, "0")}:59`,
+    windowCount: windowCounts.get(busiestWindowStart) || 0,
+    day: busiestDay,
+    dayCount: weekdayCounts[busiestDay],
+    weekdayCounts,
+    activeDateCount: activeDateCounts.size,
     medianPerActiveDate,
     range: `${oldestLabel} – ${newestLabel}`,
   };
 }
 
-function renderFactsSvg(commitItems) {
+function renderFactsSvg(commitItems, theme = "dark") {
   const commits = analyzeCommits(commitItems);
-  const facts = [
-    `Most commits land on ${commits.day} (${commits.dayCount} of ${commits.count})`,
-    `Most common commit window: ${commits.window} (${commits.windowCount} of ${commits.count})`,
-    `${commits.activeDateCount} active dates represented in this sample`,
-    `Median activity: ${commits.medianPerActiveDate} commits per active date`,
-  ];
+  const dark = theme !== "light";
+  const colors = dark
+    ? { bg: palette.bg, line: palette.line, text: palette.text, muted: palette.muted, accent: palette.blue, bar: palette.green }
+    : { bg: "#ffffff", line: "#d0d7de", text: "#1f2328", muted: "#656d76", accent: "#0969da", bar: "#1a7f37" };
+  const shortDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const fullDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const dayCounts = fullDays.map((day) => commits.weekdayCounts[day]);
+  const maxDayCount = Math.max(1, ...dayCounts);
+  const bars = dayCounts.map((count, index) => {
+    const x = 552 + index * 43;
+    const height = Math.max(3, Math.round((count / maxDayCount) * 78));
+    return `<rect x="${x}" y="${236 - height}" width="24" height="${height}" rx="4" fill="${colors.bar}" opacity="${count === maxDayCount ? 1 : 0.48}"/>
+    <text x="${x + 12}" y="258" text-anchor="middle" font-size="10.5" fill="${colors.muted}">${shortDays[index]}</text>`;
+  }).join("\n  ");
+  const median = Number.isInteger(commits.medianPerActiveDate)
+    ? commits.medianPerActiveDate
+    : commits.medianPerActiveDate.toFixed(1);
+  const subtitle = `${commits.count} recent indexed public default-branch non-merge commits · ${commits.range} · ${habitsTimeZone}`;
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" role="img" aria-label="Recent public coding habits from ${commits.count} commits">
+<svg xmlns="http://www.w3.org/2000/svg" width="896" height="300" role="img" aria-label="${xml(subtitle)}">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   </style>
-  <rect width="860" height="190" rx="18" fill="#ffffff"/>
-  <text x="34" y="40" font-size="27" font-weight="800" fill="#24292f">Recent public coding habits</text>
-  <text x="34" y="68" font-size="14" fill="#0969da">${commits.count} recent indexed public default-branch non-merge commits • ${xml(commits.range)} • Europe/Tirane</text>
-  ${facts.map((fact, index) => `<text x="34" y="${98 + index * 23}" font-size="18" fill="#6e7781">${xml(fact)}</text>`).join("\n  ")}
+  <rect x="0.5" y="0.5" width="895" height="299" rx="16" fill="${colors.bg}" stroke="${colors.line}"/>
+  <text x="28" y="48" font-size="27" font-weight="800" fill="${colors.text}" letter-spacing="-0.4">RECENT PUBLIC CODING HABITS</text>
+  <text x="28" y="78" font-size="13.5" fill="${colors.accent}">${xml(subtitle)}</text>
+  <path d="M28 98H868" stroke="${colors.line}"/>
+  <text x="28" y="132" font-size="15.5" fill="${colors.muted}">Most commits land on <tspan fill="${colors.text}" font-weight="700">${xml(commits.day)}</tspan> (${commits.dayCount} of ${commits.count})</text>
+  <text x="28" y="166" font-size="15.5" fill="${colors.muted}">Most common commit window: <tspan fill="${colors.text}" font-weight="700">${xml(commits.window)}</tspan> (${commits.windowCount} of ${commits.count})</text>
+  <text x="28" y="200" font-size="15.5" fill="${colors.muted}"><tspan fill="${colors.text}" font-weight="700">${commits.activeDateCount}</tspan> active dates represented in this sample</text>
+  <text x="28" y="234" font-size="15.5" fill="${colors.muted}">Median activity: <tspan fill="${colors.text}" font-weight="700">${median} commits</tspan> per active date</text>
+  <text x="552" y="126" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="${colors.muted}">COMMITS BY WEEKDAY</text>
+  ${bars}
 </svg>
 `;
 }
@@ -465,6 +480,7 @@ for (const favorite of anime) {
   writeFileSync(`${outDir}/profile-anime-${favorite.id}.svg`, renderAnimeSvg([favorite]));
 }
 writeFileSync(`${outDir}/profile-facts.svg`, renderFactsSvg(commitData.commits));
+writeFileSync(`${outDir}/profile-facts-light.svg`, renderFactsSvg(commitData.commits, "light"));
 writeFileSync(`${outDir}/profile-stats.svg`, renderStatsSvg(profile, repositories));
 writeFileSync(`${outDir}/profile-languages.svg`, renderLanguagesSvg(languages, languageRepositories.length));
 console.log(`Generated profile cards from ${commitData.commits.length} public commits and ${languageRepositories.length} repositories`);

@@ -59,6 +59,11 @@ assert(readme.includes(`<a href="${laneDefenseLink}">`), "Lane Defense visual mu
 assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg"), "Missing dark Lane Defense output");
 assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg"), "Missing light Lane Defense output");
 assert(!readme.includes("github-contribution-grid-snake"), "Profile README should not reference the retired contribution snake");
+assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg"), "Missing dark coding-habits output");
+assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/profile-facts-light.svg"), "Missing light coding-habits output");
+assert(generator.includes("process.env.HABITS_LIMIT"), "Coding-habits sample size must be configurable");
+assert(generator.includes("process.env.HABITS_TIMEZONE"), "Coding-habits time zone must be configurable");
+assert(generator.includes("process.env.HABITS_WINDOW"), "Coding-habits time window must be configurable");
 
 const images = [...readme.matchAll(/<img\b([^>]*)>/g)];
 assert(images.length > 0, "Profile README must contain evidence images");

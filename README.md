@@ -108,5 +108,9 @@ A cohesive gallery of interactive WebGPU and Three.js particle systems built as 
 </p>
 
 <p>
-  <img alt="Recent public coding habits from 500 commits" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts-light.svg">
+    <img alt="Recent public coding habits from 500 indexed public default-branch non-merge commits" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
+  </picture>
 </p>
