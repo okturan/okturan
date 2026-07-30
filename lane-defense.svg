@@ -372,7 +372,7 @@
 <rect x="780" y="15" width="12" height="12" rx="2.5" fill="#006d32"/>
 <rect x="780" y="30" width="12" height="12" rx="2.5" fill="#006d32"/>
 <rect x="780" y="45" width="12" height="12" rx="2.5" fill="#0e4429"/>
-<rect x="780" y="60" width="12" height="12" rx="2.5" fill="#0e4429"/>
+<rect x="780" y="60" width="12" height="12" rx="2.5" fill="#006d32"/>
 <rect x="780" y="75" width="12" height="12" rx="2.5" fill="#161b22"/>
 <rect x="780" y="90" width="12" height="12" rx="2.5" fill="#161b22"/>
 <circle cx="456" cy="81" r="3.2" fill="none" stroke="#0d1117" stroke-width="1.2"/>
