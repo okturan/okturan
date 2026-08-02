@@ -68,6 +68,19 @@ Client-side Google Cloud security-audit dashboard that discovers projects, API k
   <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
 </p>
 
+## Developer Desk
+
+<p>
+  <a href="https://developers.openai.com/codex/cli"><img alt="OpenAI Codex CLI" src="https://img.shields.io/badge/OpenAI%20Codex-CLI-000000?style=for-the-badge&logo=openai&logoColor=white"></a>
+  <a href="https://github.com/anthropics/claude-code"><img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-Terminal-D97757?style=for-the-badge&logo=anthropic&logoColor=white"></a>
+  <a href="https://hermes-agent.nousresearch.com/"><img alt="Hermes Agent" src="https://img.shields.io/badge/Hermes-Agent-7C3AED?style=for-the-badge&logo=sparkfun&logoColor=white"></a>
+  <a href="https://factory.ai/product/cli"><img alt="Factory Droid" src="https://img.shields.io/badge/Factory-Droid-111827?style=for-the-badge&logo=fireship&logoColor=white"></a>
+  <a href="https://ohmyposh.dev/"><img alt="Oh My Posh" src="https://img.shields.io/badge/Oh%20My%20Posh-Terminal-1F2937?style=for-the-badge&logo=ohmyposh&logoColor=white"></a>
+  <a href="https://ghostty.org/"><img alt="Ghostty" src="https://img.shields.io/badge/Ghostty-Terminal-111827?style=for-the-badge&logo=ghostty&logoColor=white"></a>
+</p>
+
+- Coding agents and terminal tools support the work; source control, tests, and human review remain the acceptance boundary.
+
 ## Favorite Anime
 
 <p>

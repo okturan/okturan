@@ -74,6 +74,11 @@ for (const image of images) {
 
 assert(!/\b\d[\d,]*\s+(?:unit\s+)?tests?\b/i.test(readme), "Profile copy must describe verification quality instead of advertising a raw test count");
 
+const developerDesk = section("Developer Desk", "Favorite Anime");
+assert(developerDesk.includes('alt="Oh My Posh"'), "Developer Desk must include Oh My Posh");
+assert(developerDesk.includes('alt="Ghostty"'), "Developer Desk must include Ghostty");
+assert(!developerDesk.includes("OpenHands"), "Developer Desk must not include OpenHands");
+
 const generatedCards = new Set(
   [...readme.matchAll(/raw\.githubusercontent\.com\/okturan\/okturan\/output\/(profile-[^"')]+\.svg)/g)]
     .map((match) => match[1]),
