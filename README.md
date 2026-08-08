@@ -14,36 +14,36 @@ Product engineer building web products, native macOS apps, backend services, and
 
 ### [DirWiz](https://github.com/okturan/dirwiz)
 
-Native macOS disk analyzer that visualizes multi-million-file scans in a Metal treemap. A real Mac boot-volume scan covered 4,669,384 files in 21.8 seconds; the current universal build is signed and notarized. **[site](https://dirwiz.app/) · [latest release](https://github.com/okturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okturan/dirwiz#readme)**
+Native macOS disk analyzer featuring high-throughput file scanning and hardware-accelerated Metal treemap visualization. Engineered to traverse and map multi-million-file volumes rapidly with a highly optimized, low-overhead footprint. **[site](https://dirwiz.app/) · [latest release](https://github.com/okturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okturan/dirwiz#readme)**
 
 ### [CropSize](https://github.com/okturan/cropsize)
 
-Browser tool for cropping and straightening scans, then laying them out at their measured print size without uploads. It runs SAM 2.1 in the tab, preserves physical PDF geometry, and publishes measured accuracy limits instead of a blanket claim. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okturan/cropsize#readme)**
+Client-side browser tool for cropping, straightening, and scaling scans to exact physical print dimensions. It leverages in-browser SAM 2.1 inference and strictly preserves PDF physical geometry, ensuring total data privacy by processing everything locally. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okturan/cropsize#readme)**
 
 ### [TinyVoice](https://github.com/okturan/tinyvoice)
 
-Deployed browser push-to-talk experiment around a neural speech codec. Encode and decode run in the browser; a versioned binary packet crosses a shape-checked 64 KiB edge relay. **[live experiment](https://tinyvoice.pages.dev/) · [codec, wire format, tests, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
+Web-based push-to-talk application built around a neural speech codec. It handles encoding and decoding entirely in-browser via WebAssembly, transmitting highly compressed binary payloads through a strict, schema-validated edge relay. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
 
 ### [Foljapp](https://github.com/okturan/foljapp)
 
-Pre-alpha Albanian verb-conjugation reference built as a TypeScript monorepo around reusable morphology packages, a 203-verb corpus, citation-aware pages, and linguistic regression tests. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
+Albanian verb-conjugation reference engineered as a TypeScript monorepo. Built on top of reusable morphology packages and supported by citation-aware routing, custom Rust corpus tooling, and rigorous linguistic regression testing. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
 
 ### [claude-statusblocks](https://github.com/okturan/claude-statusblocks)
 
-Zero-dependency npm CLI for Claude Code whose status cards adapt to terminal width through exhaustive bin packing. Shipped with cross-platform CI, automated npm publishing, and a built-in terminal preview. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
+Zero-dependency CLI utility for Claude Code featuring adaptive terminal status cards. It utilizes exhaustive bin-packing algorithms to dynamically format output layouts based on available terminal width. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
 
 ### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
 
-Client-side Google Cloud security-audit dashboard that discovers projects, API keys, services, and IAM policies, then turns them into findings, charts, and a ReactFlow relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+Client-side Google Cloud security dashboard. It aggregates data on projects, API keys, services, and IAM policies, synthesizing the results into actionable findings, charts, and a ReactFlow relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
 
 ## More projects I like
 
-- **[tirana-transit](https://github.com/okturan/tirana-transit)** — an interactive map of Tirana's bus network backed by a reproducible GTFS-to-GeoJSON pipeline and a read-only feed-freshness check. **[live map](https://okturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okturan/tirana-transit#readme)**
-- **[QuarterLink](https://github.com/okturan/quarterlink)** — a zero-install browser arcade where game files stay on the host, WebRTC carries play, and a Durable Object handles signaling. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
-- **[github-blocks](https://github.com/okturan/github-blocks)** — animated SVG modules that turn public GitHub data into contribution-graph battles, media panels, and configurable profile art. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
-- **[epoch-td](https://github.com/okturan/epoch-td)** — a single-file tower-defense game with branching doctrines, tower specialization, map variety, and a headless balance simulator behind the live build. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
-- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — local MediaPipe hand and face tracking driving a Three.js particle field, with synthetic browser verification instead of recorded webcam input. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
-- **[darkex-404-lab](https://github.com/okturan/darkex-404-lab)** — interactive WebGPU and Three.js particle systems built as technically distinctive 404 experiences. **[live gallery](https://okturan.github.io/darkex-404-lab/) · [source](https://github.com/okturan/darkex-404-lab)**
+- **[tirana-transit](https://github.com/okturan/tirana-transit)** — Interactive map of Tirana's bus network backed by a reproducible GTFS-to-GeoJSON pipeline and automated feed-freshness checks. **[live map](https://okturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okturan/tirana-transit#readme)**
+- **[QuarterLink](https://github.com/okturan/quarterlink)** — Zero-install browser arcade leveraging WebRTC for peer-to-peer gameplay and Cloudflare Durable Objects for signaling. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
+- **[github-blocks](https://github.com/okturan/github-blocks)** — Modular SVG generator that transforms public GitHub data into dynamic contribution-graph visualizations and configurable profile art. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
+- **[epoch-td](https://github.com/okturan/epoch-td)** — Single-file tower-defense game featuring branching tech trees, varied map generation, and a headless balance simulator driving the live build. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
+- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — Local MediaPipe hand and face tracking driving a WebGL/Three.js particle system, verified via synthetic browser testing rather than recorded webcam inputs. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
+- **[darkex-404-lab](https://github.com/okturan/darkex-404-lab)** — Interactive WebGPU and Three.js particle systems designed as technically rich 404 error experiences. **[live gallery](https://okturan.github.io/darkex-404-lab/) · [source](https://github.com/okturan/darkex-404-lab)**
 
 ## Focus
 
