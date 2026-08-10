@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: Swift 21.6%, HTML 18.2%, JavaScript 17.7%, TypeScript 17.4%, Python 8.9%, Java 6.8%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: Swift 21.6%, HTML 18.1%, JavaScript 17.9%, TypeScript 17.4%, Python 8.9%, Java 6.8%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,16 +7,16 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="78.74" height="10" fill="#f05138"/>
-    <rect x="106.74" y="70" width="66.15" height="10" fill="#e34c26"/>
-    <rect x="172.89" y="70" width="64.32" height="10" fill="#f1e05a"/>
-    <rect x="237.21" y="70" width="63.46" height="10" fill="#3178c6"/>
-    <rect x="300.66" y="70" width="32.40" height="10" fill="#3572a5"/>
-    <rect x="333.06" y="70" width="24.73" height="10" fill="#b07219"/>
-    <rect x="357.79" y="70" width="19.46" height="10" fill="#dea584"/>
-    <rect x="377.26" y="70" width="7.72" height="10" fill="#563d7c"/>
-    <rect x="384.98" y="70" width="3.20" height="10" fill="#89e051"/>
-    <rect x="388.18" y="70" width="2.56" height="10" fill="#701516"/>
+    <rect x="28.00" y="70" width="78.48" height="10" fill="#f05138"/>
+    <rect x="106.48" y="70" width="65.94" height="10" fill="#e34c26"/>
+    <rect x="172.42" y="70" width="65.23" height="10" fill="#f1e05a"/>
+    <rect x="237.65" y="70" width="63.29" height="10" fill="#3178c6"/>
+    <rect x="300.95" y="70" width="32.29" height="10" fill="#3572a5"/>
+    <rect x="333.24" y="70" width="24.65" height="10" fill="#b07219"/>
+    <rect x="357.89" y="70" width="19.40" height="10" fill="#dea584"/>
+    <rect x="377.29" y="70" width="7.71" height="10" fill="#563d7c"/>
+    <rect x="385.00" y="70" width="3.19" height="10" fill="#89e051"/>
+    <rect x="388.19" y="70" width="2.56" height="10" fill="#701516"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#f05138"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">Swift</text>
