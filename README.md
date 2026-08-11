@@ -43,7 +43,6 @@ Client-side Google Cloud security dashboard. It aggregates data on projects, API
 - **[github-blocks](https://github.com/okturan/github-blocks)** — Modular SVG generator that transforms public GitHub data into dynamic contribution-graph visualizations and configurable profile art. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
 - **[epoch-td](https://github.com/okturan/epoch-td)** — Single-file tower-defense game featuring branching tech trees, varied map generation, and a headless balance simulator driving the live build. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
 - **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — Local MediaPipe hand and face tracking driving a WebGL/Three.js particle system, verified via synthetic browser testing rather than recorded webcam inputs. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
-- **[darkex-404-lab](https://github.com/okturan/darkex-404-lab)** — Interactive WebGPU and Three.js particle systems designed as technically rich 404 error experiences. **[live gallery](https://okturan.github.io/darkex-404-lab/) · [source](https://github.com/okturan/darkex-404-lab)**
 
 ## Focus
 
