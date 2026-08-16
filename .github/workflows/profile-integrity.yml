@@ -29,7 +29,6 @@ jobs:
 
       - name: Validate profile contract
         run: |
-          node --check .github/scripts/generate-lane-defense.mjs
           node --check .github/scripts/generate-profile-cards.mjs
           node --check .github/scripts/validate-profile.mjs
           node .github/scripts/validate-profile.mjs

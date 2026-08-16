@@ -21,15 +21,22 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout main
+      - name: Checkout the renderer (okturan/github-blocks)
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
+          repository: okturan/github-blocks
+          ref: main
+          path: renderer
           persist-credentials: false
 
       - name: Generate lane defense assets
+        working-directory: renderer
         env:
           PROFILE_USER: okturan
-        run: node .github/scripts/generate-lane-defense.mjs
+          BLOCK: lane-defense
+          LD_LEVEL: rotate
+          LD_SEED: daily
+        run: node action/generate.mjs
 
       - name: Checkout output branch
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -39,8 +46,8 @@ jobs:
 
       - name: Publish lane defense assets
         run: |
-          ls -lh dist/lane-defense*
-          cp dist/lane-defense* output/
+          ls -lh renderer/dist/lane-defense*
+          cp renderer/dist/lane-defense.svg renderer/dist/lane-defense-light.svg output/
           cd output
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
