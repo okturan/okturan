@@ -39,7 +39,7 @@ for (let index = 0; index < featuredProjects.length; index += 1) {
 
 const more = section("More projects I like", "Focus");
 const moreProjects = [...more.matchAll(/^- \*\*\[([^\]]+)\]\(https:\/\/github\.com\/okturan\/([^)]+)\)\*\*[^\n]*$/gm)];
-const expectedMore = ["tirana-transit", "quarterlink", "github-blocks", "epoch-td", "reactive-particle-demo", "darkex-404-lab"];
+const expectedMore = ["tirana-transit", "quarterlink", "github-blocks", "epoch-td", "reactive-particle-demo"];
 assert(JSON.stringify(moreProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedMore), "More-projects section must retain the curated discovery order");
 const allProjectSlugs = [...featuredProjects, ...moreProjects].map((match) => match[2].toLowerCase());
 assert(new Set(allProjectSlugs).size === allProjectSlugs.length, "Featured and discovery projects must be unique");
