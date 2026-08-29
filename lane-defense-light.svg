@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="896" height="169" viewBox="-10 -36 812 153" role="img" aria-label="Tower defense over a GitHub contribution graph: towers on big commit days shoot lasers at 15 bug creeps marching along the weekday rows; 15 destroyed, 0 slip through; clean sweep">
+<svg xmlns="http://www.w3.org/2000/svg" width="896" height="169" viewBox="-10 -36 812 153" role="img" aria-label="Tower defense over a GitHub contribution graph: towers on big commit days shoot lasers at 15 bug creeps marching along the weekday rows; 15 destroyed, 0 slip through and strike a core that withstands 5; clean sweep">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     a { cursor: pointer; }
@@ -8,7 +8,7 @@
   
   <rect x="-10" y="-36" width="812" height="153" rx="6" fill="#ffffff"/>
   <text class="td-t" x="0" y="-16" font-size="11" fill="#24292f" letter-spacing="2">COMMIT DEFENSE</text>
-  <text class="td-t" x="792" y="-16" font-size="8" fill="#8b949e" text-anchor="end" letter-spacing="1">LVL 1 PATROL · 15/15 DOWN · CLEAN SWEEP</text>
+  <text class="td-t" x="792" y="-16" font-size="8" fill="#8b949e" text-anchor="end" letter-spacing="1">LVL 1 PATROL · 15/15 DOWN · 0/5 CORE HITS · CLEAN SWEEP</text>
   <rect x="0" y="0" width="12" height="12" rx="2.5" fill="#ebedf0"/>
 <rect x="0" y="15" width="12" height="12" rx="2.5" fill="#ebedf0"/>
 <rect x="0" y="30" width="12" height="12" rx="2.5" fill="#ebedf0"/>
