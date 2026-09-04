@@ -14,11 +14,11 @@
   <text x="552" y="126" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="#656d76">COMMITS BY WEEKDAY</text>
   <rect x="552" y="206" width="24" height="30" rx="4" fill="#1a7f37" opacity="0.48"/>
     <text x="564" y="258" text-anchor="middle" font-size="10.5" fill="#656d76">Mon</text>
-  <rect x="595" y="232" width="24" height="4" rx="4" fill="#1a7f37" opacity="0.48"/>
+  <rect x="595" y="231" width="24" height="5" rx="4" fill="#1a7f37" opacity="0.48"/>
     <text x="607" y="258" text-anchor="middle" font-size="10.5" fill="#656d76">Tue</text>
   <rect x="638" y="214" width="24" height="22" rx="4" fill="#1a7f37" opacity="0.48"/>
     <text x="650" y="258" text-anchor="middle" font-size="10.5" fill="#656d76">Wed</text>
-  <rect x="681" y="200" width="24" height="36" rx="4" fill="#1a7f37" opacity="0.48"/>
+  <rect x="681" y="201" width="24" height="35" rx="4" fill="#1a7f37" opacity="0.48"/>
     <text x="693" y="258" text-anchor="middle" font-size="10.5" fill="#656d76">Thu</text>
   <rect x="724" y="179" width="24" height="57" rx="4" fill="#1a7f37" opacity="0.48"/>
     <text x="736" y="258" text-anchor="middle" font-size="10.5" fill="#656d76">Fri</text>
