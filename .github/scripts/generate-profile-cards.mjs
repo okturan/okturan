@@ -475,9 +475,18 @@ const [anime, profile, repositories, commitData] = await Promise.all([
 const languageRepositories = repositories.filter((repository) => !repository.fork && !repository.archived && !repository.disabled);
 const languages = await loadLanguageTotals(languageRepositories);
 
-writeFileSync(`${outDir}/profile-anime.svg`, renderAnimeSvg(anime));
-for (const favorite of anime) {
-  writeFileSync(`${outDir}/profile-anime-${favorite.id}.svg`, renderAnimeSvg([favorite]));
+// A card without its cover is a placeholder, and the workflow copies whatever
+// lands in dist/ over the output branch. On 2026-09-07 AniList returned 403
+// for a day and three placeholders replaced the real cards. When a cover is
+// missing, write nothing: the output branch keeps the last good cards.
+const missingCovers = anime.filter((favorite) => !favorite.cover);
+if (missingCovers.length) {
+  console.warn(`Skipping anime cards: no cover art for ${missingCovers.map((favorite) => favorite.title).join(", ")}; the previous cards stay published`);
+} else {
+  writeFileSync(`${outDir}/profile-anime.svg`, renderAnimeSvg(anime));
+  for (const favorite of anime) {
+    writeFileSync(`${outDir}/profile-anime-${favorite.id}.svg`, renderAnimeSvg([favorite]));
+  }
 }
 writeFileSync(`${outDir}/profile-facts.svg`, renderFactsSvg(commitData.commits));
 writeFileSync(`${outDir}/profile-facts-light.svg`, renderFactsSvg(commitData.commits, "light"));
