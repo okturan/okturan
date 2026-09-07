@@ -60,7 +60,7 @@ Client-side Google Cloud security dashboard. It aggregates data on projects, API
 ## Developer Desk
 
 <p>
-  <img alt="Developer desk: Claude Code, Codex CLI, Hermes Agent, Neovim, Zsh, Oh My Posh, Ghostty" src="https://github-readme-tech-stack.vercel.app/api/cards?title=Developer%20Desk&lineCount=2&theme=github_dark&width=760&showBorder=false&hideTitle=true&line1=claude,Claude%20Code,d97757;openai,Codex%20CLI,10a37f;sparkfun,Hermes%20Agent,7c3aed;&line2=neovim,Neovim,57a143;zsh,Zsh,f15a24;ghostty,Ghostty,ffffff;,Oh%20My%20Posh,8b949e;">
+  <img alt="Developer desk: Claude Code, Codex CLI, Hermes Agent, herdr, Neovim, Zsh, Oh My Posh, Ghostty" src="https://github-readme-tech-stack.vercel.app/api/cards?title=Developer%20Desk&lineCount=2&theme=github_dark&width=760&showBorder=false&hideTitle=true&line1=claude,Claude%20Code,d97757;openai,Codex%20CLI,10a37f;sparkfun,Hermes%20Agent,7c3aed;,herdr,f97316;&line2=neovim,Neovim,57a143;zsh,Zsh,f15a24;ghostty,Ghostty,ffffff;,Oh%20My%20Posh,8b949e;">
 </p>
 
 - Coding agents and terminal tools support the work; source control, tests, and human review remain the acceptance boundary.
