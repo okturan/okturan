@@ -10,9 +10,9 @@
   <text x="28" y="132" font-size="15.5" fill="#8b949e">Most commits land on <tspan fill="#e6edf3" font-weight="700">Saturday</tspan> (152 of 500)</text>
   <text x="28" y="166" font-size="15.5" fill="#8b949e">Most common commit window: <tspan fill="#e6edf3" font-weight="700">21:00–23:59</tspan> (118 of 500)</text>
   <text x="28" y="200" font-size="15.5" fill="#8b949e"><tspan fill="#e6edf3" font-weight="700">39</tspan> active dates represented in this sample</text>
-  <text x="28" y="234" font-size="15.5" fill="#8b949e">Median activity: <tspan fill="#e6edf3" font-weight="700">4 commits</tspan> per active date</text>
+  <text x="28" y="234" font-size="15.5" fill="#8b949e">Median activity: <tspan fill="#e6edf3" font-weight="700">5 commits</tspan> per active date</text>
   <text x="552" y="126" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="#8b949e">COMMITS BY WEEKDAY</text>
-  <rect x="552" y="205" width="24" height="31" rx="4" fill="#3fb950" opacity="0.48"/>
+  <rect x="552" y="204" width="24" height="32" rx="4" fill="#3fb950" opacity="0.48"/>
     <text x="564" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Mon</text>
   <rect x="595" y="231" width="24" height="5" rx="4" fill="#3fb950" opacity="0.48"/>
     <text x="607" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Tue</text>
@@ -20,7 +20,7 @@
     <text x="650" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Wed</text>
   <rect x="681" y="202" width="24" height="34" rx="4" fill="#3fb950" opacity="0.48"/>
     <text x="693" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Thu</text>
-  <rect x="724" y="179" width="24" height="57" rx="4" fill="#3fb950" opacity="0.48"/>
+  <rect x="724" y="180" width="24" height="56" rx="4" fill="#3fb950" opacity="0.48"/>
     <text x="736" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Fri</text>
   <rect x="767" y="158" width="24" height="78" rx="4" fill="#3fb950" opacity="1"/>
     <text x="779" y="258" text-anchor="middle" font-size="10.5" fill="#8b949e">Sat</text>
