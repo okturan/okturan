@@ -14,41 +14,40 @@ Product engineer building web products, native macOS apps, backend services, and
 
 ### [DirWiz](https://github.com/okturan/dirwiz)
 
-Native macOS disk analyzer featuring high-throughput file scanning and hardware-accelerated Metal treemap visualization. Engineered to traverse and map multi-million-file volumes rapidly with a highly optimized, low-overhead footprint. **[site](https://dirwiz.app/) · [latest release](https://github.com/okturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okturan/dirwiz#readme)**
+A native macOS disk analyser. It measures disk usage accurately across hard links, verifies duplicates byte for byte before deletion, and handles scans of several million files in a Metal treemap. **[site](https://dirwiz.app/) · [latest release](https://github.com/okturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okturan/dirwiz#readme)**
 
 ### [CropSize](https://github.com/okturan/cropsize)
 
-Client-side browser tool for cropping, straightening, and scaling scans to exact physical print dimensions. It leverages in-browser SAM 2.1 inference and strictly preserves PDF physical geometry, ensuring total data privacy by processing everything locally. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okturan/cropsize#readme)**
+A browser tool that crops and straightens document scans and places them at their measured print size. Segmentation runs in the browser and nothing is uploaded. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okturan/cropsize#readme)**
 
 ### [TinyVoice](https://github.com/okturan/tinyvoice)
 
-Web-based push-to-talk application built around a neural speech codec. It handles encoding and decoding entirely in-browser via WebAssembly, transmitting highly compressed binary payloads through a strict, schema-validated edge relay. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
+A push to talk and voice QR app. Speech is compressed in the browser with a neural codec, far enough for a voice message to fit in a QR code, and rooms are relayed through a Cloudflare Durable Object. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
 
 ### [Foljapp](https://github.com/okturan/foljapp)
 
-Albanian verb-conjugation reference engineered as a TypeScript monorepo. Built on top of reusable morphology packages and supported by citation-aware routing, custom Rust corpus tooling, and rigorous linguistic regression testing. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
+An Albanian verb reference driven by a conjugation engine rather than a fixed word list, with corpus scanning tools in Rust. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
 
 ### [claude-statusblocks](https://github.com/okturan/claude-statusblocks)
 
-Zero-dependency CLI utility for Claude Code featuring adaptive terminal status cards. It utilizes exhaustive bin-packing algorithms to dynamically format output layouts based on available terminal width. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
+A status line for Claude Code whose cards repack to the terminal width. On npm with no runtime dependencies. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
 
 ### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
 
-Client-side Google Cloud security dashboard. It aggregates data on projects, API keys, services, and IAM policies, synthesizing the results into actionable findings, charts, and a ReactFlow relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+A client side dashboard for auditing a Google Cloud account: projects, API keys, services and IAM policies, summarised into findings, charts and a relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
 
 ## More projects I like
 
-- **[tirana-transit](https://github.com/okturan/tirana-transit)** — Interactive map of Tirana's bus network backed by a reproducible GTFS-to-GeoJSON pipeline and automated feed-freshness checks. **[live map](https://okturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okturan/tirana-transit#readme)**
-- **[QuarterLink](https://github.com/okturan/quarterlink)** — Zero-install browser arcade leveraging WebRTC for peer-to-peer gameplay and Cloudflare Durable Objects for signaling. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
-- **[github-blocks](https://github.com/okturan/github-blocks)** — Modular SVG generator that transforms public GitHub data into dynamic contribution-graph visualizations and configurable profile art. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
-- **[epoch-td](https://github.com/okturan/epoch-td)** — Single-file tower-defense game featuring branching tech trees, varied map generation, and a headless balance simulator driving the live build. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
-- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — Local MediaPipe hand and face tracking driving a WebGL/Three.js particle system, verified via synthetic browser testing rather than recorded webcam inputs. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
+- **[tirana-transit](https://github.com/okturan/tirana-transit)** — An interactive map of Tirana's bus network, built from GTFS data with a pipeline that checks the feed is still fresh. **[live map](https://okturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okturan/tirana-transit#readme)**
+- **[QuarterLink](https://github.com/okturan/quarterlink)** — A browser arcade with nothing to install, peer to peer over WebRTC, with signalling on Cloudflare Durable Objects. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
+- **[github-blocks](https://github.com/okturan/github-blocks)** — An SVG generator that turns public GitHub data into contribution graph art and profile cards. The cards on this profile come from it. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
+- **[epoch-td](https://github.com/okturan/epoch-td)** — A single file tower defence game with branching tech trees and generated maps, balanced with a headless simulator. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
+- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — Hand and face tracking with MediaPipe driving a Three.js particle system, tested with synthetic browser inputs rather than a webcam. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
 
 ## Focus
 
-- Shipping native applications, web products, developer tools, and automation.
-- Building visual, data-heavy interfaces backed by documented architecture, automated tests, and working demos or releases.
-- Turning unclear behavior and repetitive manual checks into reproducible cases and small tools.
+- I ship native apps, web products, developer tools and automation, with tests and working demos.
+- I build tools for anything I see that can be automated.
 - Based in Tirana, Albania.
 
 ## Stack
@@ -79,8 +78,6 @@ Client-side Google Cloud security dashboard. It aggregates data on projects, API
   <a href="https://ohmyposh.dev/"><img alt="Oh My Posh" src="https://img.shields.io/badge/Oh%20My%20Posh-1F2937?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI%2FPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCiAgICAgdmlld0JveD0iMCAwIDMwLjg1MSAzMC44NTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPgogIDxzdHlsZT4KICAgICNjNDNfdGVybWluYWwgewogICAgICBmaWxsOiBibGFjazsKICAgIH0KICAgIHBvbHlnb24sIHJlY3QgewogICAgICBmaWxsOiBibGFjazsKICAgIH0KCiAgICBAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgICAgICNjNDNfdGVybWluYWwgewogICAgICAgIGZpbGw6IHdoaXRlOwogICAgICB9CiAgICAgIHBvbHlnb24sIHJlY3QgewogICAgICAgIGZpbGw6IHdoaXRlOwogICAgICB9CiAgICB9CiAgPC9zdHlsZT4KCiAgPGc%2BCiAgICA8ZyBpZD0iYzQzX3Rlcm1pbmFsIj4KICAgICAgPHBhdGggZD0iTTI4LjY0NSwyLjIwM0gyLjIwNEMwLjk4NywyLjIwMywwLDMuMTg4LDAsNC40MDV2MjIuMDM4YzAsMS4yMTYsMC45ODcsMi4yMDQsMi4yMDQsMi4yMDRoMjYuNDQxCiAgICAgICAgICAgICAgICBjMS4yMTUsMCwyLjIwNi0wLjk4OCwyLjIwNi0yLjIwNFY0LjQwNUMzMC44NTEsMy4xODgsMjkuODU5LDIuMjAzLDI4LjY0NSwyLjIwM3ogTTcuMTYyLDMuODU3YzAuNjA3LDAsMS4xMDIsMC40OTEsMS4xMDIsMS4xMDMKICAgICAgICAgICAgICAgIGMwLDAuNjA3LTAuNDk0LDEuMDk4LTEuMTAyLDEuMDk4Yy0wLjYxMSwwLTEuMTA0LTAuNDktMS4xMDQtMS4wOThDNi4wNTksNC4zNDksNi41NTEsMy44NTcsNy4xNjIsMy44NTd6IE0zLjg1NSwzLjg1NwogICAgICAgICAgICAgICAgYzAuNjA4LDAsMS4xMDIsMC40OTEsMS4xMDIsMS4xMDNjMCwwLjYwNy0wLjQ5MywxLjA5OC0xLjEwMiwxLjA5OFMyLjc1Miw1LjU2OCwyLjc1Miw0Ljk2QzIuNzUzLDQuMzQ5LDMuMjQ2LDMuODU3LDMuODU1LDMuODU3egogICAgICAgICAgICAgICAgTTI4LjY0NSwyNi40NDRIMi4yMDRWNy43MzVoMjYuNDQxVjI2LjQ0NHoiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIxMi4zNTEsMTIuMjY0IDUuMjc1LDkuMDI4IDUuMjc1LDEwLjU4OSAxMC43NDYsMTIuOTI5IDEwLjc0NiwxMi45NTggNS4yNzUsMTUuMjk0IDUuMjc1LDE2Ljg1NCAxMi4zNTEsMTMuNjE4Ii8%2BCiAgICAgIDxyZWN0IHg9IjE1LjY4MiIgeT0iMTIuMTk5IiB3aWR0aD0iMy44NTUiIGhlaWdodD0iMS40ODYiLz4KICAgIDwvZz4KICA8L2c%2BCjwvc3ZnPgo%3D"></a>
   <a href="https://ghostty.org/"><img alt="Ghostty" src="https://img.shields.io/badge/Ghostty-111827?style=for-the-badge&logo=ghostty&logoColor=white"></a>
 </p>
-
-- Coding agents and terminal tools support the work; source control, tests, and human review remain the acceptance boundary.
 
 ## Favorite Anime
 
