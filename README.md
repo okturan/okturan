@@ -54,28 +54,13 @@ Client-side Google Cloud security dashboard. It aggregates data on projects, API
 ## Stack
 
 <p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-  <img alt="Swift" src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white">
-  <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
-  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
+  <img alt="Stack: TypeScript, Swift, Java, Ruby, React, Node.js, Cloudflare, PostgreSQL, Bash, Git, macOS" src="https://github-readme-tech-stack.vercel.app/api/cards?title=Stack&lineCount=2&theme=github_dark&width=760&showBorder=false&hideTitle=true&line1=typescript,TypeScript,3178c6;swift,Swift,f05138;openjdk,Java,ed8b00;ruby,Ruby,cc342d;react,React,61dafb;nodedotjs,Node.js,339933;&line2=cloudflare,Cloudflare,f38020;postgresql,PostgreSQL,4169e1;gnubash,Bash,4eaa25;git,Git,f05032;apple,macOS,ffffff;">
 </p>
 
 ## Developer Desk
 
 <p>
-  <a href="https://developers.openai.com/codex/cli"><img alt="OpenAI Codex CLI" src="https://img.shields.io/badge/OpenAI%20Codex-CLI-000000?style=for-the-badge&logo=openai&logoColor=white"></a>
-  <a href="https://github.com/anthropics/claude-code"><img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-Terminal-D97757?style=for-the-badge&logo=anthropic&logoColor=white"></a>
-  <a href="https://hermes-agent.nousresearch.com/"><img alt="Hermes Agent" src="https://img.shields.io/badge/Hermes-Agent-7C3AED?style=for-the-badge&logo=sparkfun&logoColor=white"></a>
-  <a href="https://factory.ai/product/cli"><img alt="Factory Droid" src="https://img.shields.io/badge/Factory-Droid-111827?style=for-the-badge&logo=fireship&logoColor=white"></a>
-  <a href="https://ohmyposh.dev/"><img alt="Oh My Posh" src="https://img.shields.io/badge/Oh%20My%20Posh-Terminal-1F2937?style=for-the-badge&logo=ohmyposh&logoColor=white"></a>
-  <a href="https://ghostty.org/"><img alt="Ghostty" src="https://img.shields.io/badge/Ghostty-Terminal-111827?style=for-the-badge&logo=ghostty&logoColor=white"></a>
+  <img alt="Developer desk: Claude Code, Codex CLI, Hermes Agent, Neovim, Zsh, Oh My Posh, Ghostty" src="https://github-readme-tech-stack.vercel.app/api/cards?title=Developer%20Desk&lineCount=2&theme=github_dark&width=760&showBorder=false&hideTitle=true&line1=claude,Claude%20Code,d97757;openai,Codex%20CLI,10a37f;sparkfun,Hermes%20Agent,7c3aed;&line2=neovim,Neovim,57a143;zsh,Zsh,f15a24;ghostty,Ghostty,ffffff;,Oh%20My%20Posh,8b949e;">
 </p>
 
 - Coding agents and terminal tools support the work; source control, tests, and human review remain the acceptance boundary.
