@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="GitHub at a glance for okturan">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="GitHub at a glance for okanerturan">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="34" y="39" font-size="23" font-weight="800" fill="#e6edf3">GitHub at a glance</text>
@@ -10,7 +10,7 @@
   <text x="34" y="106" font-size="13" fill="#8b949e">Public repos</text>
   <text x="225" y="84" font-size="25" font-weight="800" fill="#e6edf3">62</text>
   <text x="225" y="106" font-size="13" fill="#8b949e">Original repos</text>
-  <text x="34" y="151" font-size="25" font-weight="800" fill="#e6edf3">22</text>
+  <text x="34" y="151" font-size="25" font-weight="800" fill="#e6edf3">23</text>
   <text x="34" y="173" font-size="13" fill="#8b949e">Stars earned</text>
   <text x="225" y="151" font-size="25" font-weight="800" fill="#e6edf3">37</text>
   <text x="225" y="173" font-size="13" fill="#8b949e">Followers</text>

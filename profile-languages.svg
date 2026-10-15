@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: JavaScript 31.5%, TypeScript 26.2%, Python 11.2%, Java 8.8%, Rust 7.4%, Ruby 5.7%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: JavaScript 32.2%, TypeScript 25.8%, Python 11.0%, Java 8.7%, Rust 7.3%, Ruby 5.6%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,16 +7,16 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="114.69" height="10" fill="#f1e05a"/>
-    <rect x="142.69" y="70" width="95.22" height="10" fill="#3178c6"/>
-    <rect x="237.90" y="70" width="40.71" height="10" fill="#3572a5"/>
-    <rect x="278.61" y="70" width="32.04" height="10" fill="#b07219"/>
-    <rect x="310.65" y="70" width="26.99" height="10" fill="#dea584"/>
-    <rect x="337.64" y="70" width="20.76" height="10" fill="#701516"/>
-    <rect x="358.40" y="70" width="14.45" height="10" fill="#e34c26"/>
-    <rect x="372.85" y="70" width="12.20" height="10" fill="#563d7c"/>
-    <rect x="385.05" y="70" width="3.13" height="10" fill="#89e051"/>
-    <rect x="388.18" y="70" width="2.81" height="10" fill="#8b949e"/>
+    <rect x="28.00" y="70" width="117.23" height="10" fill="#f1e05a"/>
+    <rect x="145.23" y="70" width="94.06" height="10" fill="#3178c6"/>
+    <rect x="239.30" y="70" width="40.22" height="10" fill="#3572a5"/>
+    <rect x="279.52" y="70" width="31.65" height="10" fill="#b07219"/>
+    <rect x="311.17" y="70" width="26.66" height="10" fill="#dea584"/>
+    <rect x="337.83" y="70" width="20.51" height="10" fill="#701516"/>
+    <rect x="358.34" y="70" width="14.34" height="10" fill="#e34c26"/>
+    <rect x="372.68" y="70" width="12.46" height="10" fill="#563d7c"/>
+    <rect x="385.14" y="70" width="3.09" height="10" fill="#89e051"/>
+    <rect x="388.23" y="70" width="2.77" height="10" fill="#8b949e"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#f1e05a"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">JavaScript</text>
@@ -29,11 +29,11 @@
   <text x="191" y="135" text-anchor="end" font-size="12" fill="#8b949e">11%</text>
   <circle cx="226" cy="130" r="5" fill="#b07219"/>
   <text x="238" y="135" font-size="13" font-weight="600" fill="#e6edf3">Java</text>
-  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">8.8%</text>
+  <text x="385" y="135" text-anchor="end" font-size="12" fill="#8b949e">8.7%</text>
   <circle cx="32" cy="157" r="5" fill="#dea584"/>
   <text x="44" y="162" font-size="13" font-weight="600" fill="#e6edf3">Rust</text>
-  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">7.4%</text>
+  <text x="191" y="162" text-anchor="end" font-size="12" fill="#8b949e">7.3%</text>
   <circle cx="226" cy="157" r="5" fill="#701516"/>
   <text x="238" y="162" font-size="13" font-weight="600" fill="#e6edf3">Ruby</text>
-  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.7%</text>
+  <text x="385" y="162" text-anchor="end" font-size="12" fill="#8b949e">5.6%</text>
 </svg>
