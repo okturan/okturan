@@ -31,7 +31,7 @@ jobs:
         working-directory: source
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          PROFILE_USER: okturan
+          PROFILE_USER: okanerturan
           HABITS_LIMIT: "500"
           HABITS_TIMEZONE: "Europe/Tirane"
           HABITS_WINDOW: "3"

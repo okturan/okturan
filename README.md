@@ -5,44 +5,44 @@ Product engineer building web products, native macOS apps, backend services, and
 <p>
   <a href="mailto:okanert@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-okanert%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/okanerturan/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-okanerturan-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/okturan"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-okturan-181717?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="https://github.com/okanerturan"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-okanerturan-181717?style=flat-square&logo=github&logoColor=white"></a>
   <a href="https://codepen.io/skymorphosis"><img alt="CodePen" src="https://img.shields.io/badge/CodePen-skymorphosis-000000?style=flat-square&logo=codepen&logoColor=white"></a>
   <a href="https://leetcode.com/okanerturan/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-okanerturan-FFA116?style=flat-square&logo=leetcode&logoColor=black"></a>
 </p>
 
 ## Featured Work
 
-### [DirWiz](https://github.com/okturan/dirwiz)
+### [DirWiz](https://github.com/okanerturan/dirwiz)
 
-A native macOS disk analyser. It measures disk usage accurately across hard links, verifies duplicates byte for byte before deletion, and handles scans of several million files in a Metal treemap. **[site](https://dirwiz.app/) · [latest release](https://github.com/okturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okturan/dirwiz#readme)**
+A native macOS disk analyser. It measures disk usage accurately across hard links, verifies duplicates byte for byte before deletion, and handles scans of several million files in a Metal treemap. **[site](https://dirwiz.app/) · [latest release](https://github.com/okanerturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okanerturan/dirwiz#readme)**
 
-### [CropSize](https://github.com/okturan/cropsize)
+### [CropSize](https://github.com/okanerturan/cropsize)
 
-A browser tool that crops and straightens document scans and places them at their measured print size. Segmentation runs in the browser and nothing is uploaded. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okturan/cropsize#readme)**
+A browser tool that crops and straightens document scans and places them at their measured print size. Segmentation runs in the browser and nothing is uploaded. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okanerturan/cropsize#readme)**
 
-### [TinyVoice](https://github.com/okturan/tinyvoice)
+### [TinyVoice](https://github.com/okanerturan/tinyvoice)
 
-A push to talk and voice QR app. Speech is compressed in the browser with a neural codec, far enough for a voice message to fit in a QR code, and rooms are relayed through a Cloudflare Durable Object. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okturan/tinyvoice#readme)**
+A push to talk and voice QR app. Speech is compressed in the browser with a neural codec, far enough for a voice message to fit in a QR code, and rooms are relayed through a Cloudflare Durable Object. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okanerturan/tinyvoice#readme)**
 
-### [Foljapp](https://github.com/okturan/foljapp)
+### [Foljapp](https://github.com/okanerturan/foljapp)
 
-An Albanian verb reference driven by a conjugation engine rather than a fixed word list, with corpus scanning tools in Rust. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okturan/foljapp#readme)**
+An Albanian verb reference driven by a conjugation engine rather than a fixed word list, with corpus scanning tools in Rust. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okanerturan/foljapp#readme)**
 
-### [claude-statusblocks](https://github.com/okturan/claude-statusblocks)
+### [claude-statusblocks](https://github.com/okanerturan/claude-statusblocks)
 
-A status line for Claude Code whose cards repack to the terminal width. On npm with no runtime dependencies. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okturan/claude-statusblocks#readme)**
+A status line for Claude Code whose cards repack to the terminal width. On npm with no runtime dependencies. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okanerturan/claude-statusblocks#readme)**
 
-### [gcp-audit-dashboard](https://github.com/okturan/gcp-audit-dashboard)
+### [gcp-audit-dashboard](https://github.com/okanerturan/gcp-audit-dashboard)
 
-A client side dashboard for auditing a Google Cloud account: projects, API keys, services and IAM policies, summarised into findings, charts and a relationship graph. **[live synthetic demo](https://okturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okturan/gcp-audit-dashboard#readme)**
+A client side dashboard for auditing a Google Cloud account: projects, API keys, services and IAM policies, summarised into findings, charts and a relationship graph. **[live synthetic demo](https://okanerturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okanerturan/gcp-audit-dashboard#readme)**
 
 ## More projects I like
 
-- **[tirana-transit](https://github.com/okturan/tirana-transit)** — An interactive map of Tirana's bus network, built from GTFS data with a pipeline that checks the feed is still fresh. **[live map](https://okturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okturan/tirana-transit#readme)**
-- **[QuarterLink](https://github.com/okturan/quarterlink)** — A browser arcade with nothing to install, peer to peer over WebRTC, with signalling on Cloudflare Durable Objects. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okturan/quarterlink#readme)**
-- **[github-blocks](https://github.com/okturan/github-blocks)** — An SVG generator that turns public GitHub data into contribution graph art and profile cards. The cards on this profile come from it. **[live configurator](https://okturan.github.io/github-blocks/) · [modules and examples](https://github.com/okturan/github-blocks#readme)**
-- **[epoch-td](https://github.com/okturan/epoch-td)** — A single file tower defence game with branching tech trees and generated maps, balanced with a headless simulator. **[play it](https://okturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okturan/epoch-td#readme)**
-- **[reactive-particle-demo](https://github.com/okturan/reactive-particle-demo)** — Hand and face tracking with MediaPipe driving a Three.js particle system, tested with synthetic browser inputs rather than a webcam. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okturan/reactive-particle-demo#readme)**
+- **[tirana-transit](https://github.com/okanerturan/tirana-transit)** — An interactive map of Tirana's bus network, built from GTFS data with a pipeline that checks the feed is still fresh. **[live map](https://okanerturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okanerturan/tirana-transit#readme)**
+- **[QuarterLink](https://github.com/okanerturan/quarterlink)** — A browser arcade with nothing to install, peer to peer over WebRTC, with signalling on Cloudflare Durable Objects. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okanerturan/quarterlink#readme)**
+- **[github-blocks](https://github.com/okanerturan/github-blocks)** — An SVG generator that turns public GitHub data into contribution graph art and profile cards. The cards on this profile come from it. **[live configurator](https://okanerturan.github.io/github-blocks/) · [modules and examples](https://github.com/okanerturan/github-blocks#readme)**
+- **[epoch-td](https://github.com/okanerturan/epoch-td)** — A single file tower defence game with branching tech trees and generated maps, balanced with a headless simulator. **[play it](https://okanerturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okanerturan/epoch-td#readme)**
+- **[reactive-particle-demo](https://github.com/okanerturan/reactive-particle-demo)** — Hand and face tracking with MediaPipe driving a Three.js particle system, tested with synthetic browser inputs rather than a webcam. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okanerturan/reactive-particle-demo#readme)**
 
 ## Focus
 
@@ -82,32 +82,32 @@ A client side dashboard for auditing a Google Cloud account: projects, API keys,
 ## Favorite Anime
 
 <p>
-  <a href="https://myanimelist.net/anime/13125/Shinsekai_yori"><img width="278" alt="Shinsekai yori on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-13125.svg"></a>
-  <a href="https://myanimelist.net/anime/2246/Mononoke"><img width="278" alt="Mononoke on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-2246.svg"></a>
-  <a href="https://myanimelist.net/anime/57334/Dandadan"><img width="278" alt="Dandadan on MyAnimeList" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-anime-171018.svg"></a>
+  <a href="https://myanimelist.net/anime/13125/Shinsekai_yori"><img width="278" alt="Shinsekai yori on MyAnimeList" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-anime-13125.svg"></a>
+  <a href="https://myanimelist.net/anime/2246/Mononoke"><img width="278" alt="Mononoke on MyAnimeList" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-anime-2246.svg"></a>
+  <a href="https://myanimelist.net/anime/57334/Dandadan"><img width="278" alt="Dandadan on MyAnimeList" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-anime-171018.svg"></a>
 </p>
 
 ## GitHub Snapshot
 
 <p>
-  <img width="410" alt="Okan's GitHub stats" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-stats.svg">
-  <img width="410" alt="Top languages across Okan's public repositories" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-languages.svg">
+  <img width="410" alt="Okan's GitHub stats" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-stats.svg">
+  <img width="410" alt="Top languages across Okan's public repositories" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-languages.svg">
 </p>
 
 <p>
-  <a href="https://okturan.github.io/github-blocks/">
+  <a href="https://okanerturan.github.io/github-blocks/">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg">
-      <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense-light.svg">
+      <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
     </picture>
   </a>
 </p>
 
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts-light.svg">
-    <img alt="Recent public coding habits from 500 indexed public default-branch non-merge commits" src="https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts-light.svg">
+    <img alt="Recent public coding habits from 500 indexed public default-branch non-merge commits" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
   </picture>
 </p>

@@ -5,7 +5,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 const outDir = "dist";
 mkdirSync(outDir, { recursive: true });
 
-const profileUser = process.env.PROFILE_USER || "okturan";
+const profileUser = process.env.PROFILE_USER || "okanerturan";
 const commitSampleSize = Math.min(1_000, Math.max(1, Math.trunc(Number(process.env.HABITS_LIMIT) || 500)));
 const habitsTimeZone = process.env.HABITS_TIMEZONE || "Europe/Tirane";
 const habitsWindowHours = Math.min(12, Math.max(1, Math.trunc(Number(process.env.HABITS_WINDOW) || 3)));

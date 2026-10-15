@@ -8,7 +8,7 @@ patched in place.
 
 ## Reporting a vulnerability
 
-Please use [GitHub's private vulnerability reporting form](https://github.com/okturan/okturan/security/advisories/new)
+Please use [GitHub's private vulnerability reporting form](https://github.com/okanerturan/okanerturan/security/advisories/new)
 instead of opening a public issue. Include the affected workflow, generator, or
 rendered asset; a reduced triggering input; and the security impact.
 

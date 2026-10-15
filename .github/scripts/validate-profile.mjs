@@ -23,7 +23,7 @@ function section(name, nextName) {
 }
 
 const featured = section("Featured Work", "More projects I like");
-const featuredProjects = [...featured.matchAll(/^### \[([^\]]+)\]\(https:\/\/github\.com\/okturan\/([^)]+)\)$/gm)];
+const featuredProjects = [...featured.matchAll(/^### \[([^\]]+)\]\(https:\/\/github\.com\/okanerturan\/([^)]+)\)$/gm)];
 assert(featuredProjects.length === 6, `Expected 6 featured projects, found ${featuredProjects.length}`);
 assert(new Set(featuredProjects.map((match) => match[2].toLowerCase())).size === 6, "Featured projects must be unique");
 const expectedFeatured = ["dirwiz", "cropsize", "tinyvoice", "foljapp", "claude-statusblocks", "gcp-audit-dashboard"];
@@ -38,7 +38,7 @@ for (let index = 0; index < featuredProjects.length; index += 1) {
 }
 
 const more = section("More projects I like", "Focus");
-const moreProjects = [...more.matchAll(/^- \*\*\[([^\]]+)\]\(https:\/\/github\.com\/okturan\/([^)]+)\)\*\*[^\n]*$/gm)];
+const moreProjects = [...more.matchAll(/^- \*\*\[([^\]]+)\]\(https:\/\/github\.com\/okanerturan\/([^)]+)\)\*\*[^\n]*$/gm)];
 const expectedMore = ["tirana-transit", "quarterlink", "github-blocks", "epoch-td", "reactive-particle-demo"];
 assert(JSON.stringify(moreProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedMore), "More-projects section must retain the curated discovery order");
 const allProjectSlugs = [...featuredProjects, ...moreProjects].map((match) => match[2].toLowerCase());
@@ -50,18 +50,18 @@ for (const project of moreProjects) {
 
 const anime = section("Favorite Anime", "GitHub Snapshot");
 const animeLinks = [...anime.matchAll(/<a href="(https:\/\/myanimelist\.net\/anime\/[^\"]+)">/g)];
-const animeImages = [...anime.matchAll(/<img\b[^>]*alt="[^"]+"[^>]*src="https:\/\/raw\.githubusercontent\.com\/okturan\/okturan\/output\/profile-anime-[^"]+\.svg"[^>]*>/g)];
+const animeImages = [...anime.matchAll(/<img\b[^>]*alt="[^"]+"[^>]*src="https:\/\/raw\.githubusercontent\.com\/okanerturan\/okanerturan\/output\/profile-anime-[^"]+\.svg"[^>]*>/g)];
 assert(animeLinks.length === 3, `Expected 3 MyAnimeList destinations, found ${animeLinks.length}`);
 assert(animeImages.length === 3, `Expected 3 accessible generated anime cards, found ${animeImages.length}`);
 
-const laneDefenseLink = "https://okturan.github.io/github-blocks/";
+const laneDefenseLink = "https://okanerturan.github.io/github-blocks/";
 assert(readme.includes(`<a href="${laneDefenseLink}">`), "Lane Defense visual must link to the GitHub Blocks configurator");
-assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense.svg"), "Missing dark Lane Defense output");
-assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/lane-defense-light.svg"), "Missing light Lane Defense output");
+assert(readme.includes("https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg"), "Missing dark Lane Defense output");
+assert(readme.includes("https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense-light.svg"), "Missing light Lane Defense output");
 assert(!readme.includes("github-contribution-grid-snake"), "Profile README should not reference the retired contribution snake");
 assert(!readme.includes("streak-stats.demolab.com"), "Profile README should not depend on the failure-prone external streak card");
-assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/profile-facts.svg"), "Missing dark coding-habits output");
-assert(readme.includes("https://raw.githubusercontent.com/okturan/okturan/output/profile-facts-light.svg"), "Missing light coding-habits output");
+assert(readme.includes("https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg"), "Missing dark coding-habits output");
+assert(readme.includes("https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts-light.svg"), "Missing light coding-habits output");
 assert(generator.includes("process.env.HABITS_LIMIT"), "Coding-habits sample size must be configurable");
 assert(generator.includes("process.env.HABITS_TIMEZONE"), "Coding-habits time zone must be configurable");
 assert(generator.includes("process.env.HABITS_WINDOW"), "Coding-habits time window must be configurable");
@@ -80,7 +80,7 @@ assert(developerDesk.includes('alt="Ghostty"'), "Developer Desk must include Gho
 assert(!developerDesk.includes("OpenHands"), "Developer Desk must not include OpenHands");
 
 const generatedCards = new Set(
-  [...readme.matchAll(/raw\.githubusercontent\.com\/okturan\/okturan\/output\/(profile-[^"')]+\.svg)/g)]
+  [...readme.matchAll(/raw\.githubusercontent\.com\/okanerturan\/okanerturan\/output\/(profile-[^"')]+\.svg)/g)]
     .map((match) => match[1]),
 );
 for (const card of generatedCards) {
