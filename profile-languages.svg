@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: JavaScript 32.2%, TypeScript 25.8%, Python 11.0%, Java 8.7%, Rust 7.3%, Ruby 5.6%">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" role="img" aria-label="Top languages: JavaScript 32.3%, TypeScript 25.8%, Python 11.0%, Java 8.7%, Rust 7.3%, Ruby 5.6%">
   <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect width="420" height="190" rx="18" fill="#0d1117"/>
   <text x="28" y="35" font-size="23" font-weight="800" fill="#e6edf3">Top languages</text>
@@ -7,16 +7,16 @@
   <clipPath id="language-bar"><rect x="28" y="70" width="364" height="10" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)">
     <rect x="28" y="70" width="364" height="10" fill="#30363d"/>
-    <rect x="28.00" y="70" width="117.23" height="10" fill="#f1e05a"/>
-    <rect x="145.23" y="70" width="94.06" height="10" fill="#3178c6"/>
-    <rect x="239.30" y="70" width="40.22" height="10" fill="#3572a5"/>
-    <rect x="279.52" y="70" width="31.65" height="10" fill="#b07219"/>
-    <rect x="311.17" y="70" width="26.66" height="10" fill="#dea584"/>
-    <rect x="337.83" y="70" width="20.51" height="10" fill="#701516"/>
-    <rect x="358.34" y="70" width="14.34" height="10" fill="#e34c26"/>
-    <rect x="372.68" y="70" width="12.46" height="10" fill="#563d7c"/>
-    <rect x="385.14" y="70" width="3.09" height="10" fill="#89e051"/>
-    <rect x="388.23" y="70" width="2.77" height="10" fill="#8b949e"/>
+    <rect x="28.00" y="70" width="117.68" height="10" fill="#f1e05a"/>
+    <rect x="145.68" y="70" width="93.84" height="10" fill="#3178c6"/>
+    <rect x="239.52" y="70" width="40.12" height="10" fill="#3572a5"/>
+    <rect x="279.64" y="70" width="31.58" height="10" fill="#b07219"/>
+    <rect x="311.22" y="70" width="26.60" height="10" fill="#dea584"/>
+    <rect x="337.82" y="70" width="20.46" height="10" fill="#701516"/>
+    <rect x="358.28" y="70" width="14.32" height="10" fill="#e34c26"/>
+    <rect x="372.61" y="70" width="12.55" height="10" fill="#563d7c"/>
+    <rect x="385.15" y="70" width="3.08" height="10" fill="#89e051"/>
+    <rect x="388.24" y="70" width="2.77" height="10" fill="#8b949e"/>
   </g>
   <circle cx="32" cy="103" r="5" fill="#f1e05a"/>
   <text x="44" y="108" font-size="13" font-weight="600" fill="#e6edf3">JavaScript</text>
