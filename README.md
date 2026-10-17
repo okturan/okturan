@@ -1,83 +1,57 @@
 # Okan Erturan
 
-Product engineer building web products, native macOS apps, backend services, and developer tools.
+Product engineer building native macOS apps, small web products and tools for AI coding agents, usually because something annoyed me enough to automate it.
+
+✨ now: DirWiz, Krahaso and FightBench<br>
+💼 open to product engineering roles and small client builds: [okanert@gmail.com](mailto:okanert@gmail.com)<br>
+📍 Tirana, Albania
+
+[Email](mailto:okanert@gmail.com) · [LinkedIn](https://www.linkedin.com/in/okanerturan/) · [CodePen](https://codepen.io/skymorphosis)
+
+## Products
+
+| Product | What it does | Status |
+|---|---|---|
+| **[DirWiz](https://dirwiz.app/?ref=github)** | See where your disk went. A native macOS disk analyser with a Metal treemap | on sale, $9.99 |
+| **[Krahaso](https://krahaso.net/?ref=github)** | The same product in every Albanian shop, on one page | live |
+| **[FightBench](https://fightbench.com/?ref=github)** | Coding agents fight each other as stick figures | live |
+| **[CropSize](https://cropsize.pages.dev/?ref=github)** | Crop a scan and print it at its real physical size | live |
+
+## More work
+
+* 🤖 claude code: [statusblocks](https://github.com/okanerturan/claude-statusblocks), [plugins](https://github.com/okanerturan/claude-plugins), [amiguito](https://github.com/okanerturan/amiguito)
+* 🛠 dev tools: [reqres copier](https://github.com/okanerturan/devtools-reqres-copier), [netstats](https://github.com/okanerturan/MacNetStatsTerm), [gcp audit](https://github.com/okanerturan/gcp-audit-dashboard), [github blocks](https://github.com/okanerturan/github-blocks)
+* 📡 data and feeds: [news extractor](https://github.com/okanerturan/news-extractor), [news gatherer](https://github.com/okanerturan/news-gatherer), [tirana transit](https://github.com/okanerturan/tirana-transit)
+* 🔤 language: [foljapp](https://github.com/okanerturan/foljapp), [kolay türkçe](https://github.com/okanerturan/kolay-turkce), [xcstrings](https://github.com/okanerturan/xcstrings-translator-react)
+* 🌐 apps: [tinyvoice](https://github.com/okanerturan/tinyvoice), [catching](https://github.com/okanerturan/catching-app), [muggy](https://github.com/okanerturan/muggy), [anime tracker](https://github.com/okanerturan/anime-tracker)
+* 🎮 games and visuals: [epoch td](https://github.com/okanerturan/epoch-td), [quarterlink](https://github.com/okanerturan/quarterlink), [particles](https://github.com/okanerturan/reactive-particle-demo), [anagramator](https://github.com/okanerturan/anagramator)
+* ☕ java and spring: [library api](https://github.com/okanerturan/getir-bootcamp-library-management-system), [vet api](https://github.com/okanerturan/Veterinary-Management-System-API), [todo api](https://github.com/okanerturan/techcareer_todo_assignment), [tourism agency](https://github.com/okanerturan/TourismAgencySystem), [rent a car](https://github.com/okanerturan/RentACar)
+
+## Activity
 
 <p>
-  <a href="mailto:okanert@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-okanert%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/okanerturan/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-okanerturan-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/okanerturan"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-okanerturan-181717?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="https://codepen.io/skymorphosis"><img alt="CodePen" src="https://img.shields.io/badge/CodePen-skymorphosis-000000?style=flat-square&logo=codepen&logoColor=white"></a>
-  <a href="https://leetcode.com/okanerturan/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-okanerturan-FFA116?style=flat-square&logo=leetcode&logoColor=black"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts-light.svg">
+    <img alt="Coding habits from public commits in the last 6 months: busiest weekday, busiest hours and active days" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
+  </picture>
 </p>
-
-## Featured Work
-
-### [DirWiz](https://github.com/okanerturan/dirwiz)
-
-A native macOS disk analyser. It measures disk usage accurately across hard links, verifies duplicates byte for byte before deletion, and handles scans of several million files in a Metal treemap. **[site](https://dirwiz.app/) · [latest release](https://github.com/okanerturan/dirwiz/releases/latest) · [source and benchmarks](https://github.com/okanerturan/dirwiz#readme)**
-
-### [CropSize](https://github.com/okanerturan/cropsize)
-
-A browser tool that crops and straightens document scans and places them at their measured print size. Segmentation runs in the browser and nothing is uploaded. **[live tool](https://cropsize.pages.dev/) · [implementation, tests, and limitations](https://github.com/okanerturan/cropsize#readme)**
-
-### [TinyVoice](https://github.com/okanerturan/tinyvoice)
-
-A push to talk and voice QR app. Speech is compressed in the browser with a neural codec, far enough for a voice message to fit in a QR code, and rooms are relayed through a Cloudflare Durable Object. **[live experiment](https://tinyvoice.app/) · [codec, wire format, tests, and privacy boundary](https://github.com/okanerturan/tinyvoice#readme)**
-
-### [Foljapp](https://github.com/okanerturan/foljapp)
-
-An Albanian verb reference driven by a conjugation engine rather than a fixed word list, with corpus scanning tools in Rust. **[live reference](https://foljapp.pages.dev/) · [source and architecture](https://github.com/okanerturan/foljapp#readme)**
-
-### [claude-statusblocks](https://github.com/okanerturan/claude-statusblocks)
-
-A status line for Claude Code whose cards repack to the terminal width. On npm with no runtime dependencies. **[npm](https://www.npmjs.com/package/claude-statusblocks) · [source and proof](https://github.com/okanerturan/claude-statusblocks#readme)**
-
-### [gcp-audit-dashboard](https://github.com/okanerturan/gcp-audit-dashboard)
-
-A client side dashboard for auditing a Google Cloud account: projects, API keys, services and IAM policies, summarised into findings, charts and a relationship graph. **[live synthetic demo](https://okanerturan.github.io/gcp-audit-dashboard/) · [architecture and screenshots](https://github.com/okanerturan/gcp-audit-dashboard#readme)**
-
-## More projects I like
-
-- **[tirana-transit](https://github.com/okanerturan/tirana-transit)** — An interactive map of Tirana's bus network, built from GTFS data with a pipeline that checks the feed is still fresh. **[live map](https://okanerturan.github.io/tirana-transit/) · [pipeline and data boundary](https://github.com/okanerturan/tirana-transit#readme)**
-- **[QuarterLink](https://github.com/okanerturan/quarterlink)** — A browser arcade with nothing to install, peer to peer over WebRTC, with signalling on Cloudflare Durable Objects. **[live app](https://quarterlink.okan.workers.dev/) · [architecture and privacy boundary](https://github.com/okanerturan/quarterlink#readme)**
-- **[github-blocks](https://github.com/okanerturan/github-blocks)** — An SVG generator that turns public GitHub data into contribution graph art and profile cards. The cards on this profile come from it. **[live configurator](https://okanerturan.github.io/github-blocks/) · [modules and examples](https://github.com/okanerturan/github-blocks#readme)**
-- **[epoch-td](https://github.com/okanerturan/epoch-td)** — A single file tower defence game with branching tech trees and generated maps, balanced with a headless simulator. **[play it](https://okanerturan.github.io/epoch-td/) · [screenshots and engineering notes](https://github.com/okanerturan/epoch-td#readme)**
-- **[reactive-particle-demo](https://github.com/okanerturan/reactive-particle-demo)** — Hand and face tracking with MediaPipe driving a Three.js particle system, tested with synthetic browser inputs rather than a webcam. **[live demo](https://reactive-particle-demo.okan.workers.dev/) · [implementation and verification](https://github.com/okanerturan/reactive-particle-demo#readme)**
-
-## Focus
-
-- I ship native apps, web products, developer tools and automation, with tests and working demos.
-- I build tools for anything I see that can be automated.
-- Based in Tirana, Albania.
-
-## Stack
 
 <p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-  <img alt="Swift" src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white">
-  <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
-  <img alt="Ruby" src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white">
-  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white">
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img alt="Bash" src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
-  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
+  <a href="https://okanerturan.github.io/github-blocks/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense-light.svg">
+      <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
+    </picture>
+  </a>
 </p>
 
-## Developer Desk
+<details>
+<summary><strong>More</strong> (bootcamp work, desk, anime, numbers)</summary>
 
-<p>
-  <a href="https://github.com/anthropics/claude-code"><img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=claude&logoColor=white"></a>
-  <a href="https://developers.openai.com/codex/cli"><img alt="OpenAI Codex CLI" src="https://img.shields.io/badge/Codex%20CLI-000000?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCjxwYXRoIGQ9Ik05Ljk0NDk0IDkuNTkxNjNWOC4xMzIyN0M5Ljk0NDk0IDguMDA5MzUgOS45OTEwNSA3LjkxNzEzIDEwLjA5ODUgNy44NTU3NUwxMy4wMzI3IDYuMTY1OTlDMTMuNDMyMSA1LjkzNTU4IDEzLjkwODMgNS44MjgxIDE0LjM5OTggNS44MjgxQzE2LjI0MzIgNS44MjgxIDE3LjQxMDggNy4yNTY3NyAxNy40MTA4IDguNzc3NTFDMTcuNDEwOCA4Ljg4NSAxNy40MTA4IDkuMDA3OTIgMTcuMzk1MyA5LjEzMDgzTDE0LjM1MzcgNy4zNDg4NEMxNC4xNjk0IDcuMjQxMzUgMTMuOTg1IDcuMjQxMzUgMTMuODAwNyA3LjM0ODg0TDkuOTQ0OTQgOS41OTE2M1pNMTYuNzk2MyAxNS4yNzU1VjExLjc4ODNDMTYuNzk2MyAxMS41NzMyIDE2LjcwNCAxMS40MTk2IDE2LjUxOTcgMTEuMzEyMUwxMi42NjQgOS4wNjkzTDEzLjkyMzYgOC4zNDcyNUMxNC4wMzExIDguMjg1ODcgMTQuMTIzNCA4LjI4NTg3IDE0LjIzMDggOC4zNDcyNUwxNy4xNjUgMTAuMDM3QzE4LjAwOTkgMTAuNTI4NyAxOC41NzgyIDExLjU3MzIgMTguNTc4MiAxMi41ODdDMTguNTc4MiAxMy43NTQ0IDE3Ljg4NyAxNC44Mjk4IDE2Ljc5NjMgMTUuMjc1M1YxNS4yNzU1Wk05LjAzODYxIDEyLjIwMzFMNy43Nzg5NiAxMS40NjU4QzcuNjcxNDYgMTEuNDA0NSA3LjYyNTM1IDExLjMxMjIgNy42MjUzNSAxMS4xODkzVjcuODA5OEM3LjYyNTM1IDYuMTY2MTMgOC44ODUwMSA0LjkyMTc2IDEwLjU5MDIgNC45MjE3NkMxMS4yMzU0IDQuOTIxNzYgMTEuODM0NCA1LjEzNjg5IDEyLjM0MTUgNS41MjA4OUw5LjMxNTI2IDcuMjcyMThDOS4xMzA5NyA3LjM3OTY4IDkuMDM4NzUgNy41MzMyOCA5LjAzODc1IDcuNzQ4NDFWMTIuMjAzM0w5LjAzODYxIDEyLjIwMzFaTTExLjc1IDEzLjc3TDkuOTQ0OTQgMTIuNzU2MlYxMC42MDU2TDExLjc1IDkuNTkxNzhMMTMuNTU0OSAxMC42MDU2VjEyLjc1NjJMMTEuNzUgMTMuNzdaTTEyLjkwOTggMTguNDRDMTIuMjY0NSAxOC40NCAxMS42NjU1IDE4LjIyNDkgMTEuMTU4NSAxNy44NDA5TDE0LjE4NDcgMTYuMDg5NkMxNC4zNjkgMTUuOTgyMSAxNC40NjEyIDE1LjgyODUgMTQuNDYxMiAxNS42MTM0VjExLjE1ODVMMTUuNzM2MyAxMS44OTU4QzE1Ljg0MzggMTEuOTU3MiAxNS44ODk5IDEyLjA0OTQgMTUuODg5OSAxMi4xNzIzVjE1LjU1MTlDMTUuODg5OSAxNy4xOTU1IDE0LjYxNDggMTguNDQgMTIuOTA5OCAxOC40NFpNOS4yNjkwMSAxNS4wMTQ0TDYuMzM0ODYgMTMuMzI0NkM1LjQ4OTkgMTIuODMzIDQuOTIxNjEgMTEuNzg4NSA0LjkyMTYxIDEwLjc3NDZDNC45MjE2MSA5LjU5MTc3IDUuNjI4MjQgOC41MzE4MyA2LjcxODg2IDguMDg2M1YxMS41ODg3QzYuNzE4ODYgMTEuODAzOSA2LjgxMTA5IDExLjk1NzUgNi45OTUzOCAxMi4wNjVMMTAuODM1OSAxNC4yOTIzTDkuNTc2MjEgMTUuMDE0NEM5LjQ2ODcyIDE1LjA3NTggOS4zNzY0OSAxNS4wNzU4IDkuMjY5MDEgMTUuMDE0NFpNOS4xMDAxMyAxNy41MzM3QzcuMzY0MjYgMTcuNTMzNyA2LjA4OTE5IDE2LjIyNzkgNi4wODkxOSAxNC42MTQ5QzYuMDg5MTkgMTQuNDkyIDYuMTA0NiAxNC4zNjkxIDYuMTE5ODggMTQuMjQ2Mkw5LjE0NjEgMTUuOTk3NUM5LjMzMDM5IDE2LjEwNSA5LjUxNDgzIDE2LjEwNSA5LjY5OTEyIDE1Ljk5NzVMMTMuNTU0OSAxMy43NzAyVjE1LjIyOTVDMTMuNTU0OSAxNS4zNTI0IDEzLjUwODggMTUuNDQ0NiAxMy40MDEzIDE1LjUwNkwxMC40NjcxIDE3LjE5NThDMTAuMDY3NyAxNy40MjYyIDkuNTkxNDggMTcuNTMzNyA5LjA5OTk5IDE3LjUzMzdIOS4xMDAxM1pNMTIuOTA5OCAxOS4zNjE2QzE0Ljc2ODUgMTkuMzYxNiAxNi4zMiAxOC4wNDA2IDE2LjY3MzUgMTYuMjg5M0MxOC4zOTM5IDE1Ljg0MzggMTkuNSAxNC4yMzA4IDE5LjUgMTIuNTg3MkMxOS41IDExLjUxMTggMTkuMDM5MSAxMC40NjczIDE4LjIwOTYgOS43MTQ1NEMxOC4yODY0IDkuMzkxOTIgMTguMzMyNiA5LjA2OTMgMTguMzMyNiA4Ljc0NjgyQzE4LjMzMjYgNi41NTAxNCAxNi41NTA1IDQuOTA2MzQgMTQuNDkyMSA0LjkwNjM0QzE0LjA3NzQgNC45MDYzNCAxMy42Nzc5IDQuOTY3NzIgMTMuMjc4NSA1LjEwNjA1QzEyLjU4NzIgNC40MzAxMSAxMS42MzQ3IDQgMTAuNTkwMiA0QzguNzMxNCA0IDcuMTc5OTYgNS4zMjEwMyA2LjgyNjUgNy4wNzIzMkM1LjEwNjA1IDcuNTE3ODYgNCA5LjEzMDgzIDQgMTAuNzc0NUM0IDExLjg0OTggNC40NjA4IDEyLjg5NDQgNS4yOTAzNSAxMy42NDcxQzUuMjEzNTQgMTMuOTY5NyA1LjE2NzQzIDE0LjI5MjMgNS4xNjc0MyAxNC42MTQ4QzUuMTY3NDMgMTYuODExNCA2Ljk0OTQxIDE4LjQ1NTIgOS4wMDc5MiAxOC40NTUyQzkuNDIyNjEgMTguNDU1MiA5LjgyMjA0IDE4LjM5MzkgMTAuMjIxNSAxOC4yNTU2QzEwLjkxMjcgMTguOTMxNSAxMS44NjUxIDE5LjM2MTYgMTIuOTA5OCAxOS4zNjE2WiIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4K"></a>
-  <a href="https://hermes-agent.nousresearch.com/"><img alt="Hermes Agent" src="https://img.shields.io/badge/Hermes%20Agent-7C3AED?style=for-the-badge&logo=sparkfun&logoColor=white"></a>
-  <a href="https://herdr.dev/"><img alt="herdr" src="https://img.shields.io/badge/herdr-F97316?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADn0lEQVR42q2UX0ybZRTGf0XyQRGBGTdvSmiLE5mug8mssCh%2F6khxOgVmMDoTSFgTwwXBRLOYxczo1DDn3JJpgjVilhmuIJQ0ECKuDJctDqhDAuOi%2FUpoFJD1a9ls2u%2BCekF4B7QbCnvuvu99z%2Fuc8zznHM3NqckYGyA1NQWASCQa9y8Wi6HRaIjFYkSjalxs8kaPe2Ufsm8aAEt5KampKUQiUZy9%2FXg8sri3r2gvhQWmuHjN%2FSpos7fT29cPQJW1EltjPQOXBunudjLj98fdz9bpaKg%2FwvPmIlHNPQk6uxxMTE5RXPwcBn0ORoOezi4HFy52IElSwoRUVUWSJGxHG3jZeoBoVL23RDXVh6ipXpZodnYOo0HPwq3AmsdWQ5IkQdz23Q8iqeREhv751ywu1xCuwV%2BZm59HVVXeeftNbI31AFy99huWijL2Fe0FQJZ99Dj7CIfDgrzb4aSluSleos4uBz3OPoLBYJwUdW%2FUUFN9SHy7fx8DoLDAhFf28cnJVkGSlpbG6VMn71YQUBS%2B%2BdbOyKhblLweFy52MDziRq%2FPYXx8QhidrdNx7utWXj1oFR6Fw2Gmp2dIWnn8xMefMzLqJlun48UX9if0RZIkPF6Z3r5%2BZvx%2BofuM38%2FApUEKCkxxiSUFFIUvT58TAenpD9PS3MSxD97j8R07EhLlP5XHR8ePkWs0iM4x6HOQfdNrzM%2FMzOAhJfTPicmbU4J5bm6esbFxjrxVR17eTsbHJzj%2B4fscrn2N3c88zaj7Bi3NTezKz8NSUcb27Y9x4KUKduXnYf%2F%2BRxYXb6OqKk%2FufILDta%2BT7PHKa8qSJAmLpWy5O3zT3L5zh58HXOL8kfR0jAY9bfZ20rRaSkrMhEKLfPrZKTzeu5P9ykErAUWJb9Nco4HCAhNnzp7n8tAVJEkS0wyQlZVFQFGWTf%2Bpgx5n75ohU1WVKmslJcVmzpw9H0%2Fg8cq829QiAtZ3VDAYxOUawtZYz8LCLW6M%2FSF0z8zIoK6uFkt5KZ1dDi4PXUGz51nzhts0EWxHG7CUl4pJ12q1Ytm12dsZ%2BGVZ1k0TAOwx7cZsLuLRbdsIKAoej8zw8Ch%2FLyyIqrdEsH4fJRrQ5NVa%2F1%2F8l7ikKmsluUYDmRkZG2a3GYhlt9J6wWCIUGiR68OjwqgHQrAaKSkSGo2Gq9eu80XrV1siSEr0MxpViUSi7C8xY6ko25JcSfc7XFpaIjfX8OArWEEkEsWgz9l0lwH8C9emlpfWN2xpAAAAAElFTkSuQmCC"></a>
-  <a href="https://neovim.io/"><img alt="Neovim" src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"></a>
-  <a href="https://www.zsh.org/"><img alt="Zsh" src="https://img.shields.io/badge/Zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white"></a>
-  <a href="https://ohmyposh.dev/"><img alt="Oh My Posh" src="https://img.shields.io/badge/Oh%20My%20Posh-1F2937?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI%2FPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCiAgICAgdmlld0JveD0iMCAwIDMwLjg1MSAzMC44NTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPgogIDxzdHlsZT4KICAgICNjNDNfdGVybWluYWwgewogICAgICBmaWxsOiBibGFjazsKICAgIH0KICAgIHBvbHlnb24sIHJlY3QgewogICAgICBmaWxsOiBibGFjazsKICAgIH0KCiAgICBAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgICAgICNjNDNfdGVybWluYWwgewogICAgICAgIGZpbGw6IHdoaXRlOwogICAgICB9CiAgICAgIHBvbHlnb24sIHJlY3QgewogICAgICAgIGZpbGw6IHdoaXRlOwogICAgICB9CiAgICB9CiAgPC9zdHlsZT4KCiAgPGc%2BCiAgICA8ZyBpZD0iYzQzX3Rlcm1pbmFsIj4KICAgICAgPHBhdGggZD0iTTI4LjY0NSwyLjIwM0gyLjIwNEMwLjk4NywyLjIwMywwLDMuMTg4LDAsNC40MDV2MjIuMDM4YzAsMS4yMTYsMC45ODcsMi4yMDQsMi4yMDQsMi4yMDRoMjYuNDQxCiAgICAgICAgICAgICAgICBjMS4yMTUsMCwyLjIwNi0wLjk4OCwyLjIwNi0yLjIwNFY0LjQwNUMzMC44NTEsMy4xODgsMjkuODU5LDIuMjAzLDI4LjY0NSwyLjIwM3ogTTcuMTYyLDMuODU3YzAuNjA3LDAsMS4xMDIsMC40OTEsMS4xMDIsMS4xMDMKICAgICAgICAgICAgICAgIGMwLDAuNjA3LTAuNDk0LDEuMDk4LTEuMTAyLDEuMDk4Yy0wLjYxMSwwLTEuMTA0LTAuNDktMS4xMDQtMS4wOThDNi4wNTksNC4zNDksNi41NTEsMy44NTcsNy4xNjIsMy44NTd6IE0zLjg1NSwzLjg1NwogICAgICAgICAgICAgICAgYzAuNjA4LDAsMS4xMDIsMC40OTEsMS4xMDIsMS4xMDNjMCwwLjYwNy0wLjQ5MywxLjA5OC0xLjEwMiwxLjA5OFMyLjc1Miw1LjU2OCwyLjc1Miw0Ljk2QzIuNzUzLDQuMzQ5LDMuMjQ2LDMuODU3LDMuODU1LDMuODU3egogICAgICAgICAgICAgICAgTTI4LjY0NSwyNi40NDRIMi4yMDRWNy43MzVoMjYuNDQxVjI2LjQ0NHoiLz4KICAgICAgPHBvbHlnb24gcG9pbnRzPSIxMi4zNTEsMTIuMjY0IDUuMjc1LDkuMDI4IDUuMjc1LDEwLjU4OSAxMC43NDYsMTIuOTI5IDEwLjc0NiwxMi45NTggNS4yNzUsMTUuMjk0IDUuMjc1LDE2Ljg1NCAxMi4zNTEsMTMuNjE4Ii8%2BCiAgICAgIDxyZWN0IHg9IjE1LjY4MiIgeT0iMTIuMTk5IiB3aWR0aD0iMy44NTUiIGhlaWdodD0iMS40ODYiLz4KICAgIDwvZz4KICA8L2c%2BCjwvc3ZnPgo%3D"></a>
-  <a href="https://ghostty.org/"><img alt="Ghostty" src="https://img.shields.io/badge/Ghostty-111827?style=for-the-badge&logo=ghostty&logoColor=white"></a>
-</p>
+* 📚 bootcamp: [todo](https://github.com/okanerturan/todo-app-react), [notes](https://github.com/okanerturan/yet-another-notes-app), [dice](https://github.com/okanerturan/dice-game), [starships](https://github.com/okanerturan/sw-starships-react), [flashcards](https://github.com/okanerturan/interview-flashcards), [calendar grid](https://github.com/okanerturan/calendar-grid-react), [sports center](https://github.com/okanerturan/sports-center-react)
+* ⌨️ desk: Claude Code, Codex CLI, herdr, Neovim, Ghostty, zsh
 
 ## Favorite Anime
 
@@ -94,20 +68,6 @@ A client side dashboard for auditing a Google Cloud account: projects, API keys,
   <img width="410" alt="Top languages across Okan's public repositories" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-languages.svg">
 </p>
 
-<p>
-  <a href="https://okanerturan.github.io/github-blocks/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense-light.svg">
-      <img alt="Tower defense battle animated over Okan's contribution graph: big commit days are towers firing lasers at invading bugs; a fresh battle is generated daily" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/lane-defense.svg">
-    </picture>
-  </a>
-</p>
+</details>
 
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts-light.svg">
-    <img alt="Recent public coding habits from 500 indexed public default-branch non-merge commits" src="https://raw.githubusercontent.com/okanerturan/okanerturan/output/profile-facts.svg">
-  </picture>
-</p>
+<sub>Cards and graph made with [github-blocks](https://okanerturan.github.io/github-blocks/).</sub>

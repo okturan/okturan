@@ -22,31 +22,20 @@ function section(name, nextName) {
   return readme.slice(start, end);
 }
 
-const featured = section("Featured Work", "More projects I like");
-const featuredProjects = [...featured.matchAll(/^### \[([^\]]+)\]\(https:\/\/github\.com\/okanerturan\/([^)]+)\)$/gm)];
-assert(featuredProjects.length === 6, `Expected 6 featured projects, found ${featuredProjects.length}`);
-assert(new Set(featuredProjects.map((match) => match[2].toLowerCase())).size === 6, "Featured projects must be unique");
-const expectedFeatured = ["dirwiz", "cropsize", "tinyvoice", "foljapp", "claude-statusblocks", "gcp-audit-dashboard"];
-assert(JSON.stringify(featuredProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedFeatured), "Featured Work must match the approved six-project order");
+// Products: a table of four shipped products, each with a live site link.
+const products = section("Products", "More work");
+const productRows = [...products.matchAll(/^\| \*\*\[([^\]]+)\]\((https:\/\/[^)]+)\)\*\* \|/gm)];
+assert(productRows.length === 4, `Expected 4 product rows, found ${productRows.length}`);
+assert(JSON.stringify(productRows.map((row) => row[1])) === JSON.stringify(["DirWiz", "Krahaso", "FightBench", "CropSize"]), "Products must keep the approved order");
 
-for (let index = 0; index < featuredProjects.length; index += 1) {
-  const start = featuredProjects[index].index;
-  const end = featuredProjects[index + 1]?.index ?? featured.length;
-  const entry = featured.slice(start, end);
-  const links = [...entry.matchAll(/\[[^\]]+\]\(https:\/\/[^)]+\)/g)];
-  assert(links.length >= 3, `${featuredProjects[index][1]} needs its repository link and at least two direct proof links`);
-}
-
-const more = section("More projects I like", "Focus");
-const moreProjects = [...more.matchAll(/^- \*\*\[([^\]]+)\]\(https:\/\/github\.com\/okanerturan\/([^)]+)\)\*\*[^\n]*$/gm)];
-const expectedMore = ["tirana-transit", "quarterlink", "github-blocks", "epoch-td", "reactive-particle-demo"];
-assert(JSON.stringify(moreProjects.map((match) => match[2].toLowerCase())) === JSON.stringify(expectedMore), "More-projects section must retain the curated discovery order");
-const allProjectSlugs = [...featuredProjects, ...moreProjects].map((match) => match[2].toLowerCase());
-assert(new Set(allProjectSlugs).size === allProjectSlugs.length, "Featured and discovery projects must be unique");
-for (const project of moreProjects) {
-  const links = [...project[0].matchAll(/\[[^\]]+\]\(https:\/\/[^)]+\)/g)];
-  assert(links.length >= 3, `${project[1]} needs its repository link and at least two direct proof links`);
-}
+// More work: one grouped line per kind, every link a repository of this account, no repository twice.
+const more = section("More work", "Activity");
+const groupLines = [...more.matchAll(/^\* \S+ ([a-z ]+): (.+)$/gm)];
+assert(groupLines.length === 7, `Expected 7 grouped lines, found ${groupLines.length}`);
+const moreSlugs = [...more.matchAll(/\]\(https:\/\/github\.com\/okanerturan\/([^)\s]+)\)/g)].map((match) => match[1].toLowerCase());
+assert(moreSlugs.length >= 20, `Expected at least 20 grouped repositories, found ${moreSlugs.length}`);
+assert(new Set(moreSlugs).size === moreSlugs.length, "A repository appears in two groups");
+assert(!/okturan/i.test(readme), "README still links the old okturan username");
 
 const anime = section("Favorite Anime", "GitHub Snapshot");
 const animeLinks = [...anime.matchAll(/<a href="(https:\/\/myanimelist\.net\/anime\/[^\"]+)">/g)];
@@ -74,10 +63,8 @@ for (const image of images) {
 
 assert(!/\b\d[\d,]*\s+(?:unit\s+)?tests?\b/i.test(readme), "Profile copy must describe verification quality instead of advertising a raw test count");
 
-const developerDesk = section("Developer Desk", "Favorite Anime");
-assert(developerDesk.includes('alt="Oh My Posh"'), "Developer Desk must include Oh My Posh");
-assert(developerDesk.includes('alt="Ghostty"'), "Developer Desk must include Ghostty");
-assert(!developerDesk.includes("OpenHands"), "Developer Desk must not include OpenHands");
+assert(readme.includes("desk: Claude Code"), "README must keep the desk line");
+assert(!readme.includes("OpenHands"), "README must not mention OpenHands");
 
 const generatedCards = new Set(
   [...readme.matchAll(/raw\.githubusercontent\.com\/okanerturan\/okanerturan\/output\/(profile-[^"')]+\.svg)/g)]
@@ -99,4 +86,4 @@ for (const filename of readdirSync(workflowDirectory).filter((name) => /\.ya?ml$
   }
 }
 
-console.log(`Profile validation passed: ${featuredProjects.length} featured projects, ${moreProjects.length} discovery projects, ${animeLinks.length} anime links, ${images.length} accessible images, ${generatedCards.size} generated card references`);
+console.log(`Profile validation passed: ${productRows.length} products, ${moreSlugs.length} grouped repositories, ${animeLinks.length} anime links, ${images.length} accessible images, ${generatedCards.size} generated card references`);
