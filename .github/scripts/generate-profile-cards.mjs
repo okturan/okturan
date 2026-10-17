@@ -6,7 +6,10 @@ const outDir = "dist";
 mkdirSync(outDir, { recursive: true });
 
 const profileUser = process.env.PROFILE_USER || "okanerturan";
-const commitSampleSize = Math.min(1_000, Math.max(1, Math.trunc(Number(process.env.HABITS_LIMIT) || 500)));
+const commitSampleSize = Math.min(1_000, Math.max(1, Math.trunc(Number(process.env.HABITS_LIMIT) || 1_000)));
+// The habits card covers a time window, not a fixed commit count. GitHub's commit search caps at 1,000 results.
+const habitsMonths = Math.min(24, Math.max(1, Math.trunc(Number(process.env.HABITS_MONTHS) || 6)));
+const habitsSince = (() => { const d = new Date(); d.setUTCMonth(d.getUTCMonth() - habitsMonths); return d.toISOString().slice(0, 10); })();
 const habitsTimeZone = process.env.HABITS_TIMEZONE || "Europe/Tirane";
 const habitsWindowHours = Math.min(12, Math.max(1, Math.trunc(Number(process.env.HABITS_WINDOW) || 3)));
 const githubApiUrl = process.env.GITHUB_API_URL || "https://api.github.com";
@@ -249,27 +252,34 @@ async function loadPublicRepositories() {
 }
 
 async function loadRecentCommits() {
+  // Search one month at a time: a single commit search stops at 1,000 results, which covers only a
+  // few busy months. Each month gets its own 1,000.
   const commits = [];
   const seen = new Set();
-  const pages = 10;
-  const query = encodeURIComponent(`author:${profileUser} merge:false is:public`);
-
-  for (let page = 1; page <= pages; page++) {
-    const result = await requestGitHub(
-      `/search/commits?q=${query}&sort=author-date&order=desc&per_page=100&page=${page}`,
-      `GitHub commit search page ${page}`,
-    );
-    if (result.incomplete_results) throw new Error("GitHub commit search returned incomplete results");
-    for (const item of result.items ?? []) {
-      if (!item.commit?.author?.date || seen.has(item.sha)) continue;
-      seen.add(item.sha);
-      commits.push(item);
-      if (commits.length === commitSampleSize) break;
+  const now = new Date();
+  for (let back = 0; back < habitsMonths; back++) {
+    const from = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - back - 1, now.getUTCDate() + 1));
+    const to = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - back, now.getUTCDate()));
+    const range = `${from.toISOString().slice(0, 10)}..${to.toISOString().slice(0, 10)}`;
+    const query = encodeURIComponent(`author:${profileUser} merge:false is:public author-date:${range}`);
+    let taken = 0;
+    for (let page = 1; page <= 10; page++) {
+      const result = await requestGitHub(
+        `/search/commits?q=${query}&sort=author-date&order=desc&per_page=100&page=${page}`,
+        `GitHub commit search ${range} page ${page}`,
+      );
+      if (result.incomplete_results) throw new Error("GitHub commit search returned incomplete results");
+      for (const item of result.items ?? []) {
+        if (!item.commit?.author?.date || seen.has(item.sha)) continue;
+        seen.add(item.sha);
+        commits.push(item);
+        taken++;
+      }
+      if ((result.items?.length ?? 0) < 100 || taken >= commitSampleSize) break;
     }
-    if ((result.items?.length ?? 0) < 100 || commits.length === commitSampleSize) break;
   }
 
-  if (!commits.length) throw new Error(`GitHub commit search returned no public commits for ${profileUser}`);
+  if (!commits.length) throw new Error(`GitHub commit search returned no public commits for ${profileUser} since ${habitsSince}`);
   return { commits };
 }
 
@@ -374,19 +384,19 @@ function renderFactsSvg(commitItems, theme = "dark") {
   const median = Number.isInteger(commits.medianPerActiveDate)
     ? commits.medianPerActiveDate
     : commits.medianPerActiveDate.toFixed(1);
-  const subtitle = `${commits.count} recent indexed public default-branch non-merge commits · ${commits.range} · ${habitsTimeZone}`;
+  const subtitle = `${commits.count.toLocaleString("en-US")} public commits in the last ${habitsMonths} months · ${commits.range} · ${habitsTimeZone}`;
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="896" height="300" role="img" aria-label="${xml(subtitle)}">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   </style>
   <rect x="0.5" y="0.5" width="895" height="299" rx="16" fill="${colors.bg}" stroke="${colors.line}"/>
-  <text x="28" y="48" font-size="27" font-weight="800" fill="${colors.text}" letter-spacing="-0.4">RECENT PUBLIC CODING HABITS</text>
+  <text x="28" y="48" font-size="27" font-weight="800" fill="${colors.text}" letter-spacing="-0.4">CODING HABITS · LAST ${habitsMonths} MONTHS</text>
   <text x="28" y="78" font-size="13.5" fill="${colors.accent}">${xml(subtitle)}</text>
   <path d="M28 98H868" stroke="${colors.line}"/>
   <text x="28" y="132" font-size="15.5" fill="${colors.muted}">Most commits land on <tspan fill="${colors.text}" font-weight="700">${xml(commits.day)}</tspan> (${commits.dayCount} of ${commits.count})</text>
   <text x="28" y="166" font-size="15.5" fill="${colors.muted}">Most common commit window: <tspan fill="${colors.text}" font-weight="700">${xml(commits.window)}</tspan> (${commits.windowCount} of ${commits.count})</text>
-  <text x="28" y="200" font-size="15.5" fill="${colors.muted}"><tspan fill="${colors.text}" font-weight="700">${commits.activeDateCount}</tspan> active dates represented in this sample</text>
+  <text x="28" y="200" font-size="15.5" fill="${colors.muted}"><tspan fill="${colors.text}" font-weight="700">${commits.activeDateCount}</tspan> active days in the last ${habitsMonths} months</text>
   <text x="28" y="234" font-size="15.5" fill="${colors.muted}">Median activity: <tspan fill="${colors.text}" font-weight="700">${median} commits</tspan> per active date</text>
   <text x="552" y="126" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="${colors.muted}">COMMITS BY WEEKDAY</text>
   ${bars}
